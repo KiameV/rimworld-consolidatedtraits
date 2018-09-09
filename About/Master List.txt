@@ -1,0 +1,115 @@
+TRAITS (53 CORE & 43 MOD) BY COMMONALITY:
+
+0.050   Creepy Breathing
+0.050 * Nyctophile
+
+0.080   Cannibal
+
+0.100   Annoying Voice
+0.100 * Dunce
+0.100 * Inept
+0.100   Pyromaniac
+0.100 * Savant
+
+0.125   Beautiful
+0.125   Pretty
+0.125   Staggeringly Ugly
+0.125   Ugly
+
+0.150   Fast Learner
+0.150   Nimble
+0.150 * Nyctophobe
+0.150   Super-immune
+0.150   Wimp
+
+0.170   Bloodlust
+
+0.200 * Aesthete
+0.200 * Animal Hater
+0.200   Ascetic
+0.200 * Bipolar
+0.200 * Butcher
+0.200 * Claustrophobic
+0.200 * Coordinated
+0.200 * Eagle-Eyed
+0.200   Gay
+0.200 * Glutton
+0.200   Greedy
+0.200 * Inventor
+0.200   Jealous
+0.200   Kind
+0.200   Masochist
+0.200 * Master Diplomat
+0.200 * Master Medic
+0.200 * Master Trader
+0.200   Misandrist (only 0.02 among men)
+0.200   Misogynist (only 0.02 among women)
+0.200 * Nibbler
+0.200   Nudist
+0.200 * Perfectionist
+0.200   Psychopath
+
+0.250   Depressive
+0.250   Hard Worker
+0.250   Industrious
+0.250 * Ironman
+0.250   Iron-Willed
+0.250   Lazy
+0.250   Nervous
+0.250   Neurotic
+0.250   Optimist
+0.250   Pessimist
+0.250   Sanguine
+0.250   Slothful
+0.250   Steadfast
+0.250 * Strong Constitution
+0.250   Very Neurotic
+0.250   Volatile
+0.250 * Weak Constitution
+
+0.300 * Animal Lover
+0.300 * Builder
+0.300 * Chemist
+0.300 * Deadshot
+0.300 * Gourmet
+0.300 * Neat Freak
+0.300 * Near-Sighted
+0.300   Prosthophile 
+0.300   Prosthophobe 
+0.300   Psychically Deaf
+0.300   Psychically Dull
+0.300   Psychically Hypersensitive
+0.300   Psychically Sensitive
+0.300 * Quick Learner
+0.300 * Rockhound
+
+0.333   Chemical Fascination
+0.333   Chemical Interest
+0.333   Fast Walker
+0.333   Jogger
+0.333   Slowpoke
+0.333   Teetotaler
+
+0.350 * Low Pain Tolerance
+0.350   Night Owl
+0.350 * Sluggish
+0.350 * Swift Reflexes
+
+0.400 * Brown Thumb
+0.400   Careful Shooter
+0.400 * Cold Lover
+0.400 * Deep Sleeper
+0.400 * Diplomat
+0.400 * Haggler
+0.400 * Heat Lover
+0.400 * Poor Medic
+0.400 * Skilled Medic
+0.400 * Sucker
+0.400 * Tough
+0.400 * Uncouth
+
+0.500   Abrasive
+0.500   Brawler 
+0.500   Green Thumb 
+0.500   Too Smart 
+0.500   Trigger-Happy

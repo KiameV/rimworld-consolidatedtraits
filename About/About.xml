@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+
+	<name>Consolidated Traits - B19</name>
+	<author>Rainbeau Flambe (original) &amp; Kiame Vivacity</author>
+	<url>https://ludeon.com/forums/index.php?topic=36687.0</url>
+	<targetVersion>0.19.0</targetVersion>
+	<description>
+
+When I started looking for a mod to add more traits to the game, I quickly realized three things about the various trait collection mods that are available: they all have some traits I really like, but also some I dislike, and none of them had all the traits I wanted; they don't necessarily work very well together due to conceptual overlaps or conflicts; and some of them are buggy in one way or another.
+
+So I decided to deal with the problem by... releasing yet another trait collection mod. *Shrug* What can I say? This one, at least, has the traits I like, all the traits I like, and nothing but the traits I like. And I'm reasonably certain it's bug-free.
+
+"Consolidated Traits" adds 45 traits to the game, almost doubling the number of traits available for pawns. The new traits are:
+
+- "Aesthete": Pawns with this trait love beautiful things, and care a lot about the beauty of their environment.
+- "Animal Hater": Some pawns just aren't "animal people."
+- "Animal Lover": Pawns with this trait, as you'd expect, are especially good at dealing with animals.
+- "Bipolar": Pawns with this trait will have more extreme mood swings than other pawns.
+- "Builder": Pawns with this trait are good at constructing things, at least if they have instructions.
+- "Butcher": Pawns with this trait are much faster when butchering animal corpses.
+- "Claustrophobic": Pawns who don't like confined spaces make poor miners.
+- "Cold Lover": Pawns with this trait will complain less when it's cold, but will whine more when it's hot.
+- "Coordinated": This one provides a slight boost to global work speed and to most skilled labor.
+- "Deadshot": This provides a boost to both shooting speed and accuracy.
+- "Deep Sleeper": Pawns with this trait won't be disturbed by others while sleeping.
+- "Dunce": Pawns with this trait will learn at a slower rate.
+- "Glutton": Pawns with this trait eat very quickly.
+- "Gourmet": Pawns with this trait prepare excellent food, but take their time in doing so.
+- "Heat Lover": This is the counterpoint to "Cold Lover."
+- "Inept": This trait is the counterpoint to "Coordinated."
+- "Inventor": Pawns with this trait are great researchers, but tend to be easily distracted.
+- "Ironman"/"Tough"/"Low Pain Tolerance": These traits affect a pawn's pain tolerance.
+- "Near-Sighted"/"Eagle-Eyed": These traits affect primarily a pawn's shooting accuracy.
+- "Neat Freak": Pawns with this trait appreciate the importance of a dirt-free environment.
+- "Nibbler": Pawns with this trait eat very slowly, picking at their food.
+- "Nyctophobe"/"Nyctophile": These traits make pawns either more or less afraid of the dark than usual.
+- "Perfectionist": Pawns with this trait try to make sure their work is done right, no matter how long it takes.
+- "Poor Medic"/"Skilled Medic"/"Master Medic": These traits provide penalties or buffs to medical skills.
+- "Quick Learner": This trait is the counterpart to "Dunce."
+- "Rockhound": Pawns with this trait excel at mining and stonecutting, but are a bit slow at other tasks.
+- "Savant": Pawns with this trait are creative geniuses, but terribly slow workers.
+- "Sluggish"/"Swift Reflexes": These traits affect a pawn's ability to dodge attacks.
+- "Sucker"/"Haggler"/"Master Trader": These traits affect prices when a pawn is trading.
+- "Uncouth"/"Diplomat"/"Master Diplomat": These traits affect the success of a pawn's diplomatic efforts.
+- "Weak Constitution"/"Strong Constitution": These traits affect a pawn's resistance to pathogens and diseases.
+
+- Rainbeau Flambe (dburgdorf)
+
+=====
+
+Compatibility:
+
+"Consolidated Traits" should be compatible with most other mods. Even if those mods add similar traits, there shouldn't be any conflicts, as the traits are unlikely to have the same defNames. However, if you're using more than one mod that adds traits, you might end up seeing pawns with traits that don't really work well together, since the game won't have any way of knowing that trait X from mod Y duplicates or just isn't compatible with trait A from mod B.
+
+I'd recommend using my "More Trait Slots" mod. Combining a larger pool of traits with a larger set of traits per pawn can add some very interesting and uniquely individual personalities to your game.
+
+You should be able to add "Consolidated Traits" to an existing saved game without trouble, but removing the mod from a game in progress might cause problems if any pawns in the world have any of the mod's traits, which is of course very likely.
+
+=====
+
+Credits:
+
+Some of the traits added by this mod are original. But most of them are based on traits found in "Additional Traits," "Extended Traits," "L-Traits," and/or the base version of "Pawns Are Capable!"
+
+=====
+
+License:
+
+If you're a modpack maker and want to include "Consolidated Traits" in your pack, or if you're a modder and want to use it as the basis of a derivative mod, please feel free to do so. I ask only that you let me know about it. 
+
+=====
+
+If you have any (helpful) suggestions for improvement, please let me know!
+
+	</description>
+
+</ModMetaData>

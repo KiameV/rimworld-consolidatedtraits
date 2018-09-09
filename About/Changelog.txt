@@ -1,0 +1,24 @@
+---------------------------------------------------------------------------------
+  Changelog for "Rainbeau's Consolidated Traits"
+---------------------------------------------------------------------------------
+
+- 07/26/2017
+	- Initial release.
+
+- 09/18/2017
+	- Added new traits: Animal Hater, Builder, Chemist, Gourmet, and Natural
+	  Porter. 
+	- Made minor adjustments to the stat bonuses from some of the mod's traits.
+	- Fixed the issue that had language translation files confusing "Careful
+	  Shooter" and "Trigger-Happy."
+	- Reduced the commonality of the Pyromaniac trait.
+
+- 11/12/2017
+	- Updated to RimWorld b18 release.
+	- Removed "Natural Porter," since it's not actually possible (not easily
+	  possible, anyway) to allow pawns to carry more than a full stack of items.
+	- Added "Ironman," "Tough" and "Low Pain Tolerance" traits, to add a bit of
+	  variety to pawns' pain tolerance beyond just "normal" and "Wimpy."
+
+- 12/04/2017
+	- The mod now works the the "Mod Sync Ninja" updater.
