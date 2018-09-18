@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Base Cold Thoughts -->
+
+  <!--[Core] <EnvironmentCold.stages.0.label>有点冷</EnvironmentCold.stages.0.label>-->
+  <!--[Core] <EnvironmentCold.stages.0.description>我感觉有点冷，不舒服。</EnvironmentCold.stages.0.description>-->
+  <!--[Core] <EnvironmentCold.stages.1.label>非常冷</EnvironmentCold.stages.1.label>-->
+  <!--[Core] <EnvironmentCold.stages.1.description>我好冷啊，一直在发抖。</EnvironmentCold.stages.1.description>-->
+  <!--[Core] <EnvironmentCold.stages.2.label>特别冷</EnvironmentCold.stages.2.label>-->
+  <!--[Core] <EnvironmentCold.stages.2.description>我控制不住发抖，牙齿在打颤，唯一能想到的就是取暖。</EnvironmentCold.stages.2.description>-->
+
+
+  <!-- Cold-Lover Cold Thoughts -->
+
+  <EnvironmentColdCL.stages.0.label>有点冷</EnvironmentColdCL.stages.0.label>
+  <EnvironmentColdCL.stages.0.description>别人可能不爽，但这天气对我毫不影响，我感觉精力充沛！</EnvironmentColdCL.stages.0.description>
+  <EnvironmentColdCL.stages.1.label>非常冷</EnvironmentColdCL.stages.1.label>
+  <EnvironmentColdCL.stages.1.description>即便我低温耐受，但这的确有点冷。</EnvironmentColdCL.stages.1.description>
+  <EnvironmentColdCL.stages.2.label>特别冷</EnvironmentColdCL.stages.2.label>
+  <EnvironmentColdCL.stages.2.description>行吧，就是很冷，但有必要那样抱怨吗？</EnvironmentColdCL.stages.2.description>
+
+                           
+  <!-- Heat-Lover Cold Thoughts -->
+
+  <EnvironmentColdHL.stages.0.label>有点冷</EnvironmentColdHL.stages.0.label>
+  <EnvironmentColdHL.stages.0.description>我冷得难受。</EnvironmentColdHL.stages.0.description>
+  <EnvironmentColdHL.stages.1.label>非常冷</EnvironmentColdHL.stages.1.label>
+  <EnvironmentColdHL.stages.1.description>我冷得发抖，感觉不到一丝温暖。</EnvironmentColdHL.stages.1.description>
+  <EnvironmentColdHL.stages.2.label>特别冷</EnvironmentColdHL.stages.2.label>
+  <EnvironmentColdHL.stages.2.description>我牙齿几乎颤抖得说不出话来，脚趾已经麻了，我必须得暖和一下。</EnvironmentColdHL.stages.2.description>
+
+
+  <!-- Base Heat Thoughts -->
+
+  <!--[Core] <EnvironmentHot.stages.0.label>有点热</EnvironmentHot.stages.0.label>-->
+  <!--[Core] <EnvironmentHot.stages.0.description>这温度让人不太舒服，我在出汗。</EnvironmentHot.stages.0.description>-->
+  <!--[Core] <EnvironmentHot.stages.1.label>非常热</EnvironmentHot.stages.1.label>-->
+  <!--[Core] <EnvironmentHot.stages.1.description>我浑身都热透了。</EnvironmentHot.stages.1.description>-->
+  <!--[Core] <EnvironmentHot.stages.2.label>特别热</EnvironmentHot.stages.2.label>-->
+  <!--[Core] <EnvironmentHot.stages.2.description>感觉我就在一个烤箱里，我说不准我还能坚持多久。</EnvironmentHot.stages.2.description>-->
+  <!--[Core] <EnvironmentHot.stages.3.label>要烤熟了</EnvironmentHot.stages.3.label>-->
+  <!--[Core] <EnvironmentHot.stages.3.description>我快要被烤熟了，在这种温度下我肯定会死的。</EnvironmentHot.stages.3.description>-->
+
+
+  <!-- Cold-Lover Heat Thoughts -->
+
+  <EnvironmentHotCL.stages.0.label>有点热</EnvironmentHotCL.stages.0.label>
+  <EnvironmentHotCL.stages.0.description>这温度让人不太舒服，我在出汗。</EnvironmentHotCL.stages.0.description>
+  <EnvironmentHotCL.stages.1.label>非常热</EnvironmentHotCL.stages.1.label>
+  <EnvironmentHotCL.stages.1.description>我浑身都热透了。</EnvironmentHotCL.stages.1.description>
+  <EnvironmentHotCL.stages.2.label>特别热</EnvironmentHotCL.stages.2.label>
+  <EnvironmentHotCL.stages.2.description>感觉我就在一个烤箱里，我说不准我还能坚持多久。</EnvironmentHotCL.stages.2.description>
+  <EnvironmentHotCL.stages.3.label>要烤熟了</EnvironmentHotCL.stages.3.label>
+  <EnvironmentHotCL.stages.3.description>我快要被烤熟了，在这种温度下我肯定会死的。</EnvironmentHotCL.stages.3.description>
+
+
+  <!-- Heat-Lover Heat Thoughts -->
+
+  <EnvironmentHotHL.stages.0.label>有点热</EnvironmentHotHL.stages.0.label>
+  <EnvironmentHotHL.stages.0.description>别人可能不爽，但这天气对我毫不影响，我感觉精力充沛！</EnvironmentHotHL.stages.0.description>
+  <EnvironmentHotHL.stages.1.label>非常热</EnvironmentHotHL.stages.1.label>
+  <EnvironmentHotHL.stages.1.description>好吧，是有点热！</EnvironmentHotHL.stages.1.description>
+  <EnvironmentHotHL.stages.2.label>特别热</EnvironmentHotHL.stages.2.label>
+  <EnvironmentHotHL.stages.2.description>>即便我高温耐受，但这的确有点热。</EnvironmentHotHL.stages.2.description>
+  <EnvironmentHotHL.stages.3.label>要烤熟了</EnvironmentHotHL.stages.3.label>
+  <EnvironmentHotHL.stages.3.description>好吧，当然，天气很热。我不太舒服。但情况可能更糟。</EnvironmentHotHL.stages.3.description>
+
+
+  <!-- Base In Darkness Thoughts -->
+
+  <!--[Core] <EnvironmentDark.stages.0.label>黑暗的环境</EnvironmentDark.stages.0.label>-->
+  <!--[Core] <EnvironmentDark.stages.0.description>我已经在黑暗中待了一段时间了。我不太喜欢这样。</EnvironmentDark.stages.0.description>-->
+
+
+  <!-- Nyctophobe In Darkness Thoughts -->
+
+  <EnvironmentDarkNyctophobe.stages.0.label>黑暗的环境</EnvironmentDarkNyctophobe.stages.0.label>
+  <EnvironmentDarkNyctophobe.stages.0.description>我啥也看不见！这太可怕了。我……我看到什么东西在动……</EnvironmentDarkNyctophobe.stages.0.description>
+
+
+  <!-- Nycotophile In Darkness Thoughts -->
+
+  <EnvironmentDarkNyctophile.stages.0.label>黑暗的环境</EnvironmentDarkNyctophile.stages.0.label>
+  <EnvironmentDarkNyctophile.stages.0.description>嗯，是有点看不清东西，但是说真的，怎么每个人在黑暗中都这么崩溃？我觉得挺酷的。</EnvironmentDarkNyctophile.stages.0.description>
+
+
+  <!-- Base NeedBeauty Thoughts -->
+
+  <!--[Core] <NeedBeauty.stages.0.label>极其丑陋的环境</NeedBeauty.stages.0.label>-->
+  <!--[Core] <NeedBeauty.stages.0.description>这个地方简直无法忍受。赶快让我出去……</NeedBeauty.stages.0.description>-->
+  <!--[Core] <NeedBeauty.stages.1.label>非常丑陋的环境</NeedBeauty.stages.1.label>-->
+  <!--[Core] <NeedBeauty.stages.1.description>这个地方太差了。我不想待在这里。</NeedBeauty.stages.1.description>-->
+  <!--[Core] <NeedBeauty.stages.2.label>丑陋的环境</NeedBeauty.stages.2.label>-->
+  <!--[Core] <NeedBeauty.stages.2.description>待在这种地方真是浑身难受。</NeedBeauty.stages.2.description>-->
+  <!--[Core] <NeedBeauty.stages.3.label>美丽的环境</NeedBeauty.stages.3.label>-->
+  <!--[Core] <NeedBeauty.stages.3.description>这个地方不错。</NeedBeauty.stages.3.description>-->
+  <!--[Core] <NeedBeauty.stages.4.label>非常美丽的环境</NeedBeauty.stages.4.label>-->
+  <!--[Core] <NeedBeauty.stages.4.description>我真的很喜欢这个地方。太漂亮了。</NeedBeauty.stages.4.description>-->
+  <!--[Core] <NeedBeauty.stages.5.label>极其美丽的环境</NeedBeauty.stages.5.label>-->
+  <!--[Core] <NeedBeauty.stages.5.description>这个地方真是很美丽。让我振奋起来精力十足。</NeedBeauty.stages.5.description>-->
+
+
+  <!-- Aesthete NeedBeauty Thoughts -->
+
+  <NeedBeautyAesthete.stages.0.label>极其丑陋的环境</NeedBeautyAesthete.stages.0.label>
+  <NeedBeautyAesthete.stages.0.description>这个地方简直无法忍受。赶快让我出去……</NeedBeautyAesthete.stages.0.description>
+  <NeedBeautyAesthete.stages.1.label>非常丑陋的环境</NeedBeautyAesthete.stages.1.label>
+  <NeedBeautyAesthete.stages.1.description>这个地方太差了。我不想待在这里。</NeedBeautyAesthete.stages.1.description>
+  <NeedBeautyAesthete.stages.2.label>丑陋的环境</NeedBeautyAesthete.stages.2.label>
+  <NeedBeautyAesthete.stages.2.description>待在这种地方真是浑身难受。</NeedBeautyAesthete.stages.2.description>
+  <NeedBeautyAesthete.stages.3.label>美丽的环境</NeedBeautyAesthete.stages.3.label>
+  <NeedBeautyAesthete.stages.3.description>这个地方不错。</NeedBeautyAesthete.stages.3.description>
+  <NeedBeautyAesthete.stages.4.label>非常美丽的环境</NeedBeautyAesthete.stages.4.label>
+  <NeedBeautyAesthete.stages.4.description>我真的很喜欢这个地方。太漂亮了。</NeedBeautyAesthete.stages.4.description>
+  <NeedBeautyAesthete.stages.5.label>极其美丽的环境</NeedBeautyAesthete.stages.5.label>
+  <NeedBeautyAesthete.stages.5.description>这个地方真是很美丽。让我振奋起来精力十足。</NeedBeautyAesthete.stages.5.description>
+
+
+  <!-- Disturbed Sleep Thoughts -->
+
+  <!--[Core] <SleepDisturbed.stages.0.label>睡眠被打扰</SleepDisturbed.stages.0.label>-->
+  <!--[Core] <SleepDisturbed.stages.0.description>我睡觉的时候有人在附近走来走去，我希望有一间私密的房间。</SleepDisturbed.stages.0.description>-->
+
+
+</LanguageData>
