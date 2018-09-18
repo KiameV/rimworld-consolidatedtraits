@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RCT_Aesthete.degreeDatas.0.label>唯美主义者</RCT_Aesthete.degreeDatas.0.label>
+  <RCT_Aesthete.degreeDatas.0.description>[PAWN_nameDef]爱好美丽的事物，非常在意[PAWN_possessive]的环境美观度。</RCT_Aesthete.degreeDatas.0.description>
+
+  <RCT_AnimalLover.degreeDatas.0.label>动物爱好者</RCT_AnimalLover.degreeDatas.0.label>
+  <RCT_AnimalLover.degreeDatas.0.description>[PAWN_nameDef]喜爱动物，不过[PAWN_pronoun]对待人们可能不太一样。</RCT_AnimalLover.degreeDatas.0.description>
+
+  <RCT_AnimalHater.degreeDatas.0.label>讨厌动物的人</RCT_AnimalHater.degreeDatas.0.label>
+  <RCT_AnimalHater.degreeDatas.0.description>[PAWN_nameDef]不是"动保主义者"，[PAWN_pronoun]不喜欢动物。需要说明的是，他们也不喜欢[PAWN_objective]。</RCT_AnimalHater.degreeDatas.0.description>
+
+  <RCT_Bipolar.degreeDatas.0.label>双相情感障者</RCT_Bipolar.degreeDatas.0.label>
+  <RCT_Bipolar.degreeDatas.0.description>[PAWN_nameDef]的情绪在两极大幅波动。当[PAWN_pronoun]开心，[PAWN_pronoun]能变得万分高兴。但当[PAWN_pronoun]难过，[PAWN_pronoun]能变得极度抑郁。</RCT_Bipolar.degreeDatas.0.description>
+
+  <RCT_Builder.degreeDatas.0.label>建筑工人</RCT_Builder.degreeDatas.0.label>
+  <RCT_Builder.degreeDatas.0.description>[PAWN_nameDef]小时候喜欢玩组装玩具，现在还享受着“拼凑物件”的陶醉感。但当没有明确的指令时，[PAWN_pronoun]会变得有点迷失。</RCT_Builder.degreeDatas.0.description>
+
+  <RCT_Butcher.degreeDatas.0.label>屠夫</RCT_Butcher.degreeDatas.0.label>
+  <RCT_Butcher.degreeDatas.0.description>[PAWN_nameDef]喜欢为烹饪准备肉，[PAWN_possessive]的屠宰速度大大提高，但只限于处理动物尸体。[PAWN_pronoun]不善于处理机械尸体。</RCT_Butcher.degreeDatas.0.description>
+
+  <RCT_Claustrophobic.degreeDatas.0.label>幽闭恐惧症</RCT_Claustrophobic.degreeDatas.0.label>
+  <RCT_Claustrophobic.degreeDatas.0.description>[PAWN_nameDef]患有幽闭恐惧症。[PAWN_pronoun]害怕狭小的空间，因此无法作为一个能干的矿工。</RCT_Claustrophobic.degreeDatas.0.description>
+
+  <RCT_ColdLover.degreeDatas.0.label>寒冷爱好者</RCT_ColdLover.degreeDatas.0.label>
+  <RCT_ColdLover.degreeDatas.0.description>[PAWN_nameDef]喜欢低温。[PAWN_pronoun]比别人更能耐受寒冷，但天气太热时也会发牢骚。</RCT_ColdLover.degreeDatas.0.description>
+
+  <RCT_DeepSleeper.degreeDatas.0.label>深度睡眠专家</RCT_DeepSleeper.degreeDatas.0.label>
+  <RCT_DeepSleeper.degreeDatas.0.description>[PAWN_nameDef]在啥情况下都能睡得安稳。</RCT_DeepSleeper.degreeDatas.0.description>
+
+  <RCT_Dunce.degreeDatas.0.label>小蠢蛋</RCT_Dunce.degreeDatas.0.label>
+  <RCT_Dunce.degreeDatas.0.description>[PAWN_nameDef]有点傻傻的，学东西也比别人慢些。</RCT_Dunce.degreeDatas.0.description>
+
+  <RCT_Gourmet.degreeDatas.0.label>美食家</RCT_Gourmet.degreeDatas.0.label>
+  <RCT_Gourmet.degreeDatas.0.description>[PAWN_nameDef]热衷于菜品配制。[PAWN_possessive]烹饪的食物相当可口，但[PAWN_pronoun]往往需要一段时间才能使它们“恰到好处”。</RCT_Gourmet.degreeDatas.0.description>
+
+  <RCT_HeatLover.degreeDatas.0.label>炎热爱好者</RCT_HeatLover.degreeDatas.0.label>
+  <RCT_HeatLover.degreeDatas.0.description>[PAWN_nameDef]喜欢高温。[PAWN_pronoun]]比别人更能耐受炎热，但天气太冷时也会发牢骚。</RCT_HeatLover.degreeDatas.0.description>
+
+  <RCT_Aptitude.degreeDatas.0.label>无能</RCT_Aptitude.degreeDatas.0.label>
+  <RCT_Aptitude.degreeDatas.0.description>[PAWN_pronoun]做事认真，但[PAWN_nameDef]手脚笨拙，技术性工作无法做得太好。</RCT_Aptitude.degreeDatas.0.description>
+  <RCT_Aptitude.degreeDatas.1.label>手脚灵活</RCT_Aptitude.degreeDatas.1.label>
+  <RCT_Aptitude.degreeDatas.1.description>[PAWN_nameDef]非常协调，而且擅长任何技术性工作。</RCT_Aptitude.degreeDatas.1.description>
+
+  <RCT_PainThreshold.degreeDatas.0.label>铁人</RCT_PainThreshold.degreeDatas.0.label>
+  <RCT_PainThreshold.degreeDatas.0.description>[PAWN_nameDef]对疼痛有极高的忍耐力。[PAWN_pronoun]不会为疼痛所动。</RCT_PainThreshold.degreeDatas.0.description>
+  <RCT_PainThreshold.degreeDatas.1.label>坚韧</RCT_PainThreshold.degreeDatas.1.label>
+  <RCT_PainThreshold.degreeDatas.1.description>[PAWN_nameDef]对疼痛有极高的忍耐力。</RCT_PainThreshold.degreeDatas.1.description>
+  <RCT_PainThreshold.degreeDatas.2.label>低痛觉耐受</RCT_PainThreshold.degreeDatas.2.label>
+  <RCT_PainThreshold.degreeDatas.2.description>[PAWN_nameDef]比别人对疼痛更敏感。</RCT_PainThreshold.degreeDatas.2.description>
+
+  <RCT_Inventor.degreeDatas.0.label>发明家</RCT_Inventor.degreeDatas.0.label>
+  <RCT_Inventor.degreeDatas.0.description>新奇的想法总是闪现在[PAWN_nameDef]的脑海中。研究新科技对[PAWN_objective]来说轻而易举，但[PAWN_pronoun]看起来心不在焉。</RCT_Inventor.degreeDatas.0.description>
+
+  <RCT_Eyesight.degreeDatas.0.label>近视眼</RCT_Eyesight.degreeDatas.0.label>
+  <RCT_Eyesight.degreeDatas.0.description>除非离得近，[PAWN_nameDef]很难看清东西。</RCT_Eyesight.degreeDatas.0.description>
+  <RCT_Eyesight.degreeDatas.1.label>目光锐利</RCT_Eyesight.degreeDatas.1.label>
+  <RCT_Eyesight.degreeDatas.1.description>[PAWN_nameDef]有一双敏锐的眼睛，能快速发现目标。</RCT_Eyesight.degreeDatas.1.description>
+
+  <RCT_NeatFreak.degreeDatas.0.label>洁癖</RCT_NeatFreak.degreeDatas.0.label>
+  <RCT_NeatFreak.degreeDatas.0.description>[PAWN_nameDef]对肮脏过分挑剔。</RCT_NeatFreak.degreeDatas.0.description>
+
+  <RCT_EatingSpeed.degreeDatas.0.label>小胃口</RCT_EatingSpeed.degreeDatas.0.label>
+  <RCT_EatingSpeed.degreeDatas.0.description>[PAWN_nameDef]食量小，但吃得慢。</RCT_EatingSpeed.degreeDatas.0.description>
+  <RCT_EatingSpeed.degreeDatas.1.label>暴食者</RCT_EatingSpeed.degreeDatas.1.label>
+  <RCT_EatingSpeed.degreeDatas.1.description>[PAWN_nameDef]吃饭比别人更快。</RCT_EatingSpeed.degreeDatas.1.description>
+
+  <RCT_Nyctophobe.degreeDatas.0.label>黑暗恐惧症</RCT_Nyctophobe.degreeDatas.0.label>
+  <RCT_Nyctophobe.degreeDatas.0.description>[PAWN_nameDef]很怕黑。</RCT_Nyctophobe.degreeDatas.0.description>
+  <RCT_Nyctophobe.degreeDatas.1.label>不怕黑</RCT_Nyctophobe.degreeDatas.1.label>
+  <RCT_Nyctophobe.degreeDatas.1.description>[PAWN_nameDef]完全不怕黑。</RCT_Nyctophobe.degreeDatas.1.description>
+
+  <RCT_Perfectionist.degreeDatas.0.label>完美主义者</RCT_Perfectionist.degreeDatas.0.label>
+  <RCT_Perfectionist.degreeDatas.0.description>[PAWN_nameDef]不做到极致决不罢休，不管会花多长时间。[PAWN_pronoun]做事比别人失败更少，但[PAWN_pronoun]工作速度更慢。</RCT_Perfectionist.degreeDatas.0.description>
+
+  <RCT_Medic.degreeDatas.0.label>庸医</RCT_Medic.degreeDatas.0.label>
+  <RCT_Medic.degreeDatas.0.description>即便他们想法是好的，但有些人就是不适合学医。[PAWN_nameDef]便是其中之一。</RCT_Medic.degreeDatas.0.description>
+  <RCT_Medic.degreeDatas.1.label>医术精湛</RCT_Medic.degreeDatas.1.label>
+  <RCT_Medic.degreeDatas.1.description>[PAWN_nameDef]似乎对医护工作有诀窍。在[PAWN_possessive]护理下，患者恢复得更好。</RCT_Medic.degreeDatas.1.description>
+  <RCT_Medic.degreeDatas.2.label>妙手回春</RCT_Medic.degreeDatas.2.label>
+  <RCT_Medic.degreeDatas.2.description>[PAWN_nameDef]在医学方面天赋异禀。在[PAWN_possessive]稳定、熟练的手法和[PAWN_possessive]鼓舞人心的临床态度，患者在[PAWN_possessive]照料下无所畏惧。</RCT_Medic.degreeDatas.2.description>
+
+  <RCT_QuickLearner.degreeDatas.0.label>天资聪颖</RCT_QuickLearner.degreeDatas.0.label>
+  <RCT_QuickLearner.degreeDatas.0.description>[PAWN_nameDef]学起东西来很快。</RCT_QuickLearner.degreeDatas.0.description>
+
+  <RCT_Rockhound.degreeDatas.0.label>奇石收藏家</RCT_Rockhound.degreeDatas.0.label>
+  <RCT_Rockhound.degreeDatas.0.description>[PAWN_nameDef]和矿石在一起很快乐。[PAWN_possessive]采矿速度很快，但[PAWN_possessive]对其他领域低下的兴趣导致[PAWN_objective]做别的工作时速度下降。并且他很讨厌耕种。</RCT_Rockhound.degreeDatas.0.description>
+
+  <RCT_Savant.degreeDatas.0.label>博学</RCT_Savant.degreeDatas.0.label>
+  <RCT_Savant.degreeDatas.0.description>[PAWN_nameDef]就是现代达芬奇！对他创造性的思维来说，捕捉新奇的点子简直易如反掌。但[PAWN_pronoun]做体力劳动时心情不好，速度也慢。</RCT_Savant.degreeDatas.0.description>
+
+  <RCT_Dodging.degreeDatas.0.label>无力</RCT_Dodging.degreeDatas.0.label>
+  <RCT_Dodging.degreeDatas.0.description>[PAWN_nameDef]不善于避开攻击。</RCT_Dodging.degreeDatas.0.description>
+  <RCT_Dodging.degreeDatas.1.label>迅敏反应</RCT_Dodging.degreeDatas.1.label>
+  <RCT_Dodging.degreeDatas.1.description>[PAWN_nameDef]有着猫咪般的反应力，擅长躲避攻击。</RCT_Dodging.degreeDatas.1.description>
+
+  <RCT_Trader.degreeDatas.0.label>憨批</RCT_Trader.degreeDatas.0.label>
+  <RCT_Trader.degreeDatas.0.description>[PAWN_nameDef]看上去只会帮倒忙，接待商队倒是积极。[PAWN_pronoun]付的钱远超市场价，还觉得自己赚大发了。 </RCT_Trader.degreeDatas.0.description>
+  <RCT_Trader.degreeDatas.1.label>砍价狂</RCT_Trader.degreeDatas.1.label>
+  <RCT_Trader.degreeDatas.1.description>[PAWN_nameDef]乐于讨价还价，并且干得还不错。[PAWN_pronoun]比大多数人更能拿到优惠价。</RCT_Trader.degreeDatas.1.description>
+  <RCT_Trader.degreeDatas.2.label>贸易大师</RCT_Trader.degreeDatas.2.label>
+  <RCT_Trader.degreeDatas.2.description>[PAWN_nameDef]的贸易技巧出类拔萃，总是能做到最好。</RCT_Trader.degreeDatas.2.description>
+
+  <!--[Core] <ShootingAccuracy.degreeDatas.0.label>冷枪手</ShootingAccuracy.degreeDatas.0.label>-->
+  <!--[Core] <ShootingAccuracy.degreeDatas.0.description>[PAWN_nameDef]在射击时会花更多的时间来瞄准。[PAWN_pronoun]射得比别人慢，但打得更准。</ShootingAccuracy.degreeDatas.0.description>-->
+  <!--[Core] <ShootingAccuracy.degreeDatas.1.label>乱开枪</ShootingAccuracy.degreeDatas.1.label>-->
+  <!--[Core] <ShootingAccuracy.degreeDatas.1.description>砰！砰！砰！[PAWN_nameDef]只是喜欢扣动扳机。[PAWN_pronoun]射得比别人快，但打得不准。</ShootingAccuracy.degreeDatas.1.description>-->
+  <ShootingAccuracy.degreeDatas.2.label>死亡射手</ShootingAccuracy.degreeDatas.2.label>
+  <ShootingAccuracy.degreeDatas.2.description>[PAWN_nameDef]精通用枪，射击又快又准。</ShootingAccuracy.degreeDatas.2.description>
+
+  <RCT_Diplomat.degreeDatas.0.label>神经大条</RCT_Diplomat.degreeDatas.0.label>
+  <RCT_Diplomat.degreeDatas.0.description>微妙？社交？[PAWN_nameDef]几乎不懂这些词的意思。</RCT_Diplomat.degreeDatas.0.description>
+  <RCT_Diplomat.degreeDatas.1.label>外交官</RCT_Diplomat.degreeDatas.1.label>
+  <RCT_Diplomat.degreeDatas.1.description>[PAWN_nameDef]懂得如何让外交更好。</RCT_Diplomat.degreeDatas.1.description>
+  <RCT_Diplomat.degreeDatas.2.label>外交大师</RCT_Diplomat.degreeDatas.2.label>
+  <RCT_Diplomat.degreeDatas.2.description>[PAWN_nameDef]的言语有着奇妙的魔力，总能缓和紧张尴尬的局面。[PAWN_pronoun]可以说个几天几夜，人们百听不厌。</RCT_Diplomat.degreeDatas.2.description>
+
+  <RCT_Constitution.degreeDatas.0.label>弱不禁风</RCT_Constitution.degreeDatas.0.label>
+  <RCT_Constitution.degreeDatas.0.description>[PAWN_nameDef]特别容易受到疾病、病原体和有毒物质的危害。</RCT_Constitution.degreeDatas.0.description>
+  <RCT_Constitution.degreeDatas.1.label>百毒不侵</RCT_Constitution.degreeDatas.1.label>
+  <RCT_Constitution.degreeDatas.1.description>[PAWN_nameDef]的身体比正常人更能抵抗疾病、病原体和有毒物质。</RCT_Constitution.degreeDatas.1.description>
+
+
+</LanguageData>
