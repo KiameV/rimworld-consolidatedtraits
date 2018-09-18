@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <RCT_Aesthete.degreeDatas.0.label>aesthete</RCT_Aesthete.degreeDatas.0.label>
+  <RCT_Aesthete.degreeDatas.0.description>[PAWN_nameDef] loves beautiful things, and really cares about how [PAWN_possessive] enviroment looks.</RCT_Aesthete.degreeDatas.0.description>
+
+  <RCT_AnimalLover.degreeDatas.0.label>animal lover</RCT_AnimalLover.degreeDatas.0.label>
+  <RCT_AnimalLover.degreeDatas.0.description>[PAWN_nameDef] loves animals. [PAWN_pronoun] doesn't feel quite the same about people, though.</RCT_AnimalLover.degreeDatas.0.description>
+
+  <RCT_AnimalHater.degreeDatas.0.label>animal hater</RCT_AnimalHater.degreeDatas.0.label>
+  <RCT_AnimalHater.degreeDatas.0.description>[PAWN_nameDef] just isn't an "animal person." [PAWN_pronoun] doesn't like animals, and for the record, they don't seem to much like [PAWN_objective], either.</RCT_AnimalHater.degreeDatas.0.description>
+
+  <RCT_Bipolar.degreeDatas.0.label>bipolar</RCT_Bipolar.degreeDatas.0.label>
+  <RCT_Bipolar.degreeDatas.0.description>[PAWN_nameDef] is prone to extreme mood swings. When [PAWN_pronoun]'s happy, [PAWN_pronoun] can be very happy, but when [PAWN_pronoun]'s sad, [PAWN_pronoun] can become dangerously depressed.</RCT_Bipolar.degreeDatas.0.description>
+
+  <RCT_Builder.degreeDatas.0.label>builder</RCT_Builder.degreeDatas.0.label>
+  <RCT_Builder.degreeDatas.0.description>[PAWN_nameDef] loved playing with construction toys as a child, and still enjoys the thrill of "putting things together." But [PAWN_pronoun] tends to be a bit lost without clear instructions to follow.</RCT_Builder.degreeDatas.0.description>
+
+  <RCT_Butcher.degreeDatas.0.label>butcher</RCT_Butcher.degreeDatas.0.label>
+  <RCT_Butcher.degreeDatas.0.description>[PAWN_nameDef] enjoys preparing meat for cooking. [PAWN_possessive] butchering speed is greatly increased, but only if [PAWN_pronoun]'s dealing with animal corpses. [PAWN_pronoun]'s terrible with mechanoids.</RCT_Butcher.degreeDatas.0.description>
+
+  <RCT_Claustrophobic.degreeDatas.0.label>claustrophobic</RCT_Claustrophobic.degreeDatas.0.label>
+  <RCT_Claustrophobic.degreeDatas.0.description>[PAWN_nameDef] is claustrophobic. [PAWN_pronoun] is terrified of tight spaces, and thus is not a very competent miner.</RCT_Claustrophobic.degreeDatas.0.description>
+
+  <RCT_ColdLover.degreeDatas.0.label>cold lover</RCT_ColdLover.degreeDatas.0.label>
+  <RCT_ColdLover.degreeDatas.0.description>[PAWN_nameDef] loves colder temperatures. [PAWN_pronoun]'ll complain less than others when it's chilly, but will whine more when it's hot.</RCT_ColdLover.degreeDatas.0.description>
+
+  <RCT_DeepSleeper.degreeDatas.0.label>deep sleeper</RCT_DeepSleeper.degreeDatas.0.label>
+  <RCT_DeepSleeper.degreeDatas.0.description>[PAWN_nameDef] can sleep through anything.</RCT_DeepSleeper.degreeDatas.0.description>
+
+  <RCT_Dunce.degreeDatas.0.label>dunce</RCT_Dunce.degreeDatas.0.label>
+  <RCT_Dunce.degreeDatas.0.description>[PAWN_nameDef] is a bit of a dunce, and learns at a slower rate than others.</RCT_Dunce.degreeDatas.0.description>
+
+  <RCT_Gourmet.degreeDatas.0.label>gourmet</RCT_Gourmet.degreeDatas.0.label>
+  <RCT_Gourmet.degreeDatas.0.description>[PAWN_nameDef] has a passion for food preparation. [PAWN_possessive] culinary creations are quite tasty, but [PAWN_pronoun] tends to take a while getting them "just right."</RCT_Gourmet.degreeDatas.0.description>
+
+  <RCT_HeatLover.degreeDatas.0.label>heat lover</RCT_HeatLover.degreeDatas.0.label>
+  <RCT_HeatLover.degreeDatas.0.description>[PAWN_nameDef] loves the heat. [PAWN_pronoun]'ll complain less than others when it's hot, but will whine more when it's cold.</RCT_HeatLover.degreeDatas.0.description>
+
+  <RCT_Aptitude.degreeDatas.0.label>inept</RCT_Aptitude.degreeDatas.0.label>
+  <RCT_Aptitude.degreeDatas.0.description>[PAWN_pronoun] means well, but [PAWN_nameDef] is uncoordinated, and just not very good at any sort of skilled labor.</RCT_Aptitude.degreeDatas.0.description>
+  <RCT_Aptitude.degreeDatas.1.label>coordinated</RCT_Aptitude.degreeDatas.1.label>
+  <RCT_Aptitude.degreeDatas.1.description>[PAWN_nameDef] is unusually coordinated, and good at most any sort of skilled labor.</RCT_Aptitude.degreeDatas.1.description>
+
+  <RCT_PainThreshold.degreeDatas.0.label>ironman</RCT_PainThreshold.degreeDatas.0.label>
+  <RCT_PainThreshold.degreeDatas.0.description>[PAWN_nameDef] has an exceptionally high tolerance for pain. [PAWN_pronoun] is unlikely to be immobilized by it.</RCT_PainThreshold.degreeDatas.0.description>
+  <RCT_PainThreshold.degreeDatas.1.label>tough</RCT_PainThreshold.degreeDatas.1.label>
+  <RCT_PainThreshold.degreeDatas.1.description>[PAWN_nameDef] has a high tolerance for pain.</RCT_PainThreshold.degreeDatas.1.description>
+  <RCT_PainThreshold.degreeDatas.2.label>low pain tolerance</RCT_PainThreshold.degreeDatas.2.label>
+  <RCT_PainThreshold.degreeDatas.2.description>[PAWN_nameDef] will become immobilized by pain more quickly than most.</RCT_PainThreshold.degreeDatas.2.description>
+
+  <RCT_Inventor.degreeDatas.0.label>inventor</RCT_Inventor.degreeDatas.0.label>
+  <RCT_Inventor.degreeDatas.0.description>Strange new ideas just appear in [PAWN_nameDef]'s mind. Researching new technologies comes easily to [PAWN_objective], but [PAWN_pronoun] always seems distracted.</RCT_Inventor.degreeDatas.0.description>
+
+  <RCT_Eyesight.degreeDatas.0.label>near-sighted</RCT_Eyesight.degreeDatas.0.label>
+  <RCT_Eyesight.degreeDatas.0.description>[PAWN_nameDef] has a hard time seeing things clearly unless [PAWN_pronoun] is relatively close to them.</RCT_Eyesight.degreeDatas.0.description>
+  <RCT_Eyesight.degreeDatas.1.label>eagle-eyed</RCT_Eyesight.degreeDatas.1.label>
+  <RCT_Eyesight.degreeDatas.1.description>[PAWN_nameDef] has a keen eye, and can quickly spot targets.</RCT_Eyesight.degreeDatas.1.description>
+
+  <RCT_NeatFreak.degreeDatas.0.label>neat freak</RCT_NeatFreak.degreeDatas.0.label>
+  <RCT_NeatFreak.degreeDatas.0.description>[PAWN_nameDef] is fastidious to a fault.</RCT_NeatFreak.degreeDatas.0.description>
+
+  <RCT_EatingSpeed.degreeDatas.0.label>nibbler</RCT_EatingSpeed.degreeDatas.0.label>
+  <RCT_EatingSpeed.degreeDatas.0.description>[PAWN_nameDef] picks at [PAWN_possessive] food, taking extra time to finish [PAWN_possessive] meals.</RCT_EatingSpeed.degreeDatas.0.description>
+  <RCT_EatingSpeed.degreeDatas.1.label>glutton</RCT_EatingSpeed.degreeDatas.1.label>
+  <RCT_EatingSpeed.degreeDatas.1.description>[PAWN_nameDef] devours [PAWN_possessive] meals much faster than others.</RCT_EatingSpeed.degreeDatas.1.description>
+
+  <RCT_Nyctophobe.degreeDatas.0.label>nyctophobe</RCT_Nyctophobe.degreeDatas.0.label>
+  <RCT_Nyctophobe.degreeDatas.0.description>[PAWN_nameDef] is really afraid of the dark.</RCT_Nyctophobe.degreeDatas.0.description>
+  <RCT_Nyctophobe.degreeDatas.1.label>nyctophile</RCT_Nyctophobe.degreeDatas.1.label>
+  <RCT_Nyctophobe.degreeDatas.1.description>[PAWN_nameDef] doesn't fear the dark at all.</RCT_Nyctophobe.degreeDatas.1.description>
+
+  <RCT_Perfectionist.degreeDatas.0.label>perfectionist</RCT_Perfectionist.degreeDatas.0.label>
+  <RCT_Perfectionist.degreeDatas.0.description>[PAWN_nameDef] refuses to accept less than [PAWN_possessive] best in any endeavor, no matter how long it takes. [PAWN_pronoun]'s less likely to fail when doing something, but [PAWN_pronoun] works slowly.</RCT_Perfectionist.degreeDatas.0.description>
+
+  <RCT_Medic.degreeDatas.0.label>poor medic</RCT_Medic.degreeDatas.0.label>
+  <RCT_Medic.degreeDatas.0.description>Even when they have the best of intentions, some people just aren't cut out for medicine. [PAWN_nameDef] is one of those people.</RCT_Medic.degreeDatas.0.description>
+  <RCT_Medic.degreeDatas.1.label>skilled medic</RCT_Medic.degreeDatas.1.label>
+  <RCT_Medic.degreeDatas.1.description>[PAWN_nameDef] seems to have a knack for medical work. Patients in [PAWN_possessive] care will likely fare well.</RCT_Medic.degreeDatas.1.description>
+  <RCT_Medic.degreeDatas.2.label>master medic</RCT_Medic.degreeDatas.2.label>
+  <RCT_Medic.degreeDatas.2.description>[PAWN_nameDef] has a natural aptitude for medical work. Between [PAWN_possessive] steady, skilled hands and [PAWN_possessive] inspiring bedside manner, patients in [PAWN_possessive] care will have little to fear.</RCT_Medic.degreeDatas.2.description>
+
+  <RCT_QuickLearner.degreeDatas.0.label>quick learner</RCT_QuickLearner.degreeDatas.0.label>
+  <RCT_QuickLearner.degreeDatas.0.description>[PAWN_nameDef] has always picked up skills pretty quickly.</RCT_QuickLearner.degreeDatas.0.description>
+
+  <RCT_Rockhound.degreeDatas.0.label>rockhound</RCT_Rockhound.degreeDatas.0.label>
+  <RCT_Rockhound.degreeDatas.0.description>[PAWN_nameDef] enjoys working with rocks. [PAWN_possessive] mining speed is increased, but [PAWN_possessive] lack of interest in other areas slows [PAWN_objective] down when doing other jobs. And [PAWN_pronoun] hates working with plants.</RCT_Rockhound.degreeDatas.0.description>
+
+  <RCT_Savant.degreeDatas.0.label>savant</RCT_Savant.degreeDatas.0.label>
+  <RCT_Savant.degreeDatas.0.description>[PAWN_nameDef] is a modern-day Da Vinci, with a creative mind that can grasp new ideas almost effortlessly. But [PAWN_pronoun]'s almost painfully slow when it comes to doing actual physical work.</RCT_Savant.degreeDatas.0.description>
+
+  <RCT_Dodging.degreeDatas.0.label>sluggish</RCT_Dodging.degreeDatas.0.label>
+  <RCT_Dodging.degreeDatas.0.description>[PAWN_nameDef] is not very good at getting out of the way of blows.</RCT_Dodging.degreeDatas.0.description>
+  <RCT_Dodging.degreeDatas.1.label>swift reflexes</RCT_Dodging.degreeDatas.1.label>
+  <RCT_Dodging.degreeDatas.1.description>[PAWN_nameDef] has cat-like reflexes, and excels at evading attacks.</RCT_Dodging.degreeDatas.1.description>
+
+  <RCT_Trader.degreeDatas.0.label>sucker</RCT_Trader.degreeDatas.0.label>
+  <RCT_Trader.degreeDatas.0.description>[PAWN_nameDef] just can't seem to help but get taken advantage of while trading. [PAWN_pronoun]'ll pay more than [PAWN_pronoun] should, and still think that [PAWN_pronoun] got a good deal. </RCT_Trader.degreeDatas.0.description>
+  <RCT_Trader.degreeDatas.1.label>haggler</RCT_Trader.degreeDatas.1.label>
+  <RCT_Trader.degreeDatas.1.description>[PAWN_nameDef] likes to haggle, and isn't bad at it. [PAWN_pronoun] tends to get better prices than most people.</RCT_Trader.degreeDatas.1.description>
+  <RCT_Trader.degreeDatas.2.label>master trader</RCT_Trader.degreeDatas.2.label>
+  <RCT_Trader.degreeDatas.2.description>[PAWN_nameDef] always gets the best deals.</RCT_Trader.degreeDatas.2.description>
+
+  <!--[Core] <ShootingAccuracy.degreeDatas.0.label>careful shooter</ShootingAccuracy.degreeDatas.0.label>-->
+  <!--[Core] <ShootingAccuracy.degreeDatas.0.description>[PAWN_nameDef] takes more time to aim when shooting. [PAWN_pronoun] shoots less often than others, but with more accuracy.</ShootingAccuracy.degreeDatas.0.description>-->
+  <!--[Core] <ShootingAccuracy.degreeDatas.1.label>trigger-happy</ShootingAccuracy.degreeDatas.1.label>-->
+  <!--[Core] <ShootingAccuracy.degreeDatas.1.description>Pew! Pew! Pew! [PAWN_nameDef] just likes pulling the trigger. [PAWN_pronoun] shoots faster than others, but less accurately.</ShootingAccuracy.degreeDatas.1.description>-->
+  <ShootingAccuracy.degreeDatas.2.label>deadshot</ShootingAccuracy.degreeDatas.2.label>
+  <ShootingAccuracy.degreeDatas.2.description>[PAWN_nameDef] knows how to handle a firearm, and can shoot both quickly and accurately.</ShootingAccuracy.degreeDatas.2.description>
+
+  <RCT_Diplomat.degreeDatas.0.label>uncouth</RCT_Diplomat.degreeDatas.0.label>
+  <RCT_Diplomat.degreeDatas.0.description>Subtlety? Diplomacy? [PAWN_nameDef] barely even understands the meaning of the words.</RCT_Diplomat.degreeDatas.0.description>
+  <RCT_Diplomat.degreeDatas.1.label>diplomat</RCT_Diplomat.degreeDatas.1.label>
+  <RCT_Diplomat.degreeDatas.1.description>[PAWN_nameDef] knows how to grease the wheels of diplomacy.</RCT_Diplomat.degreeDatas.1.description>
+  <RCT_Diplomat.degreeDatas.2.label>master diplomat</RCT_Diplomat.degreeDatas.2.label>
+  <RCT_Diplomat.degreeDatas.2.description>[PAWN_nameDef] has such a way with words that [PAWN_pronoun] always manages to cool down a tense situation. [PAWN_pronoun] could talk for days and people would still listen.</RCT_Diplomat.degreeDatas.2.description>
+
+  <RCT_Constitution.degreeDatas.0.label>weak constitution</RCT_Constitution.degreeDatas.0.label>
+  <RCT_Constitution.degreeDatas.0.description>[PAWN_nameDef] is especially vulnerable to diseases, pathogens and toxic fallout.</RCT_Constitution.degreeDatas.0.description>
+  <RCT_Constitution.degreeDatas.1.label>strong constitution</RCT_Constitution.degreeDatas.1.label>
+  <RCT_Constitution.degreeDatas.1.description>[PAWN_nameDef]'s body is stronger than normal against diseases, pathogens and toxic fallout.</RCT_Constitution.degreeDatas.1.description>
+
+
+</LanguageData>
