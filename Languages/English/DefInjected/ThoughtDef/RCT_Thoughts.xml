@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Base Cold Thoughts -->
+
+  <!--[Core] <EnvironmentCold.stages.0.label>chilly</EnvironmentCold.stages.0.label>-->
+  <!--[Core] <EnvironmentCold.stages.0.description>I'm uncomfortably cold.</EnvironmentCold.stages.0.description>-->
+  <!--[Core] <EnvironmentCold.stages.1.label>cold</EnvironmentCold.stages.1.label>-->
+  <!--[Core] <EnvironmentCold.stages.1.description>I'm so cold, I'm shivering.</EnvironmentCold.stages.1.description>-->
+  <!--[Core] <EnvironmentCold.stages.2.label>numbing cold</EnvironmentCold.stages.2.label>-->
+  <!--[Core] <EnvironmentCold.stages.2.description>I can't stop shivering. My teeth are chattering. All I can think of is getting warm.</EnvironmentCold.stages.2.description>-->
+
+
+  <!-- Cold-Lover Cold Thoughts -->
+
+  <EnvironmentColdCL.stages.0.label>cold</EnvironmentColdCL.stages.0.label>
+  <EnvironmentColdCL.stages.0.description>Others may be complaining, but I don't mind this weather. It's invigorating!</EnvironmentColdCL.stages.0.description>
+  <EnvironmentColdCL.stages.1.label>very cold</EnvironmentColdCL.stages.1.label>
+  <EnvironmentColdCL.stages.1.description>Even by my standards, this is a bit cool.</EnvironmentColdCL.stages.1.description>
+  <EnvironmentColdCL.stages.2.label>freezing</EnvironmentColdCL.stages.2.label>
+  <EnvironmentColdCL.stages.2.description>Yeah, fine. It's cold. But is it really worth whining about?</EnvironmentColdCL.stages.2.description>
+
+
+  <!-- Heat-Lover Cold Thoughts -->
+
+  <EnvironmentColdHL.stages.0.label>cold</EnvironmentColdHL.stages.0.label>
+  <EnvironmentColdHL.stages.0.description>I'm uncomfortably cold.</EnvironmentColdHL.stages.0.description>
+  <EnvironmentColdHL.stages.1.label>very cold</EnvironmentColdHL.stages.1.label>
+  <EnvironmentColdHL.stages.1.description>I'm so cold. Shivering. Can't get warm.</EnvironmentColdHL.stages.1.description>
+  <EnvironmentColdHL.stages.2.label>freezing</EnvironmentColdHL.stages.2.label>
+  <EnvironmentColdHL.stages.2.description>My teeth are chattering so hard I can barely speak. My toes are numb. I need to get warm.</EnvironmentColdHL.stages.2.description>
+
+
+  <!-- Base Heat Thoughts -->
+
+  <!--[Core] <EnvironmentHot.stages.0.label>sweaty</EnvironmentHot.stages.0.label>-->
+  <!--[Core] <EnvironmentHot.stages.0.description>It's too hot here. I'm sweating.</EnvironmentHot.stages.0.description>-->
+  <!--[Core] <EnvironmentHot.stages.1.label>hot</EnvironmentHot.stages.1.label>-->
+  <!--[Core] <EnvironmentHot.stages.1.description>It's way too hot here. If I could just have a breath of cool air...</EnvironmentHot.stages.1.description>-->
+  <!--[Core] <EnvironmentHot.stages.2.label>sweltering hot</EnvironmentHot.stages.2.label>-->
+  <!--[Core] <EnvironmentHot.stages.2.description>I feel like I'm in an oven! I'm not sure how long I can handle this.</EnvironmentHot.stages.2.description>-->
+  <!--[Core] <EnvironmentHot.stages.3.label>blistering hot</EnvironmentHot.stages.3.label>-->
+  <!--[Core] <EnvironmentHot.stages.3.description>This place is searing hot. I think I could die from this heat!</EnvironmentHot.stages.3.description>-->
+
+
+  <!-- Cold-Lover Heat Thoughts -->
+
+  <EnvironmentHotCL.stages.0.label>hot</EnvironmentHotCL.stages.0.label>
+  <EnvironmentHotCL.stages.0.description>This heat is unpleasant. I'm sweating.</EnvironmentHotCL.stages.0.description>
+  <EnvironmentHotCL.stages.1.label>very hot</EnvironmentHotCL.stages.1.label>
+  <EnvironmentHotCL.stages.1.description>I'm really overheated.</EnvironmentHotCL.stages.1.description>
+  <EnvironmentHotCL.stages.2.label>extremely hot</EnvironmentHotCL.stages.2.label>
+  <EnvironmentHotCL.stages.2.description>I feel like I'm in an oven! I'm not sure how long I can handle this.</EnvironmentHotCL.stages.2.description>
+  <EnvironmentHotCL.stages.3.label>burning up</EnvironmentHotCL.stages.3.label>
+  <EnvironmentHotCL.stages.3.description>I'm burning up. I think I could die from this heat!</EnvironmentHotCL.stages.3.description>
+
+
+  <!-- Heat-Lover Heat Thoughts -->
+
+  <EnvironmentHotHL.stages.0.label>hot</EnvironmentHotHL.stages.0.label>
+  <EnvironmentHotHL.stages.0.description>Others may be complaining, but I don't mind this weather.</EnvironmentHotHL.stages.0.description>
+  <EnvironmentHotHL.stages.1.label>very hot</EnvironmentHotHL.stages.1.label>
+  <EnvironmentHotHL.stages.1.description>OK, yeah, it's getting a bit warm.</EnvironmentHotHL.stages.1.description>
+  <EnvironmentHotHL.stages.2.label>extremely hot</EnvironmentHotHL.stages.2.label>
+  <EnvironmentHotHL.stages.2.description>Even by my standards, this is a bit toasty.</EnvironmentHotHL.stages.2.description>
+  <EnvironmentHotHL.stages.3.label>burning up</EnvironmentHotHL.stages.3.label>
+  <EnvironmentHotHL.stages.3.description>OK, sure, it's hot. I'm not terribly comfortable. But it could be worse.</EnvironmentHotHL.stages.3.description>
+
+
+  <!-- Base In Darkness Thoughts -->
+
+  <!--[Core] <EnvironmentDark.stages.0.label>darkness</EnvironmentDark.stages.0.label>-->
+  <!--[Core] <EnvironmentDark.stages.0.description>I've been in the dark for a while. I don't like it.</EnvironmentDark.stages.0.description>-->
+
+
+  <!-- Nyctophobe In Darkness Thoughts -->
+
+  <EnvironmentDarkNyctophobe.stages.0.label>in darkness</EnvironmentDarkNyctophobe.stages.0.label>
+  <EnvironmentDarkNyctophobe.stages.0.description>I can't see anything! I don't like this at all. I... I think I saw something move....</EnvironmentDarkNyctophobe.stages.0.description>
+
+
+  <!-- Nycotophile In Darkness Thoughts -->
+
+  <EnvironmentDarkNyctophile.stages.0.label>in darkness</EnvironmentDarkNyctophile.stages.0.label>
+  <EnvironmentDarkNyctophile.stages.0.description>Sure, it's a bit hard to see, but really, why does everyone else freak out so much in the dark? I think it's cool.</EnvironmentDarkNyctophile.stages.0.description>
+
+
+  <!-- Base NeedBeauty Thoughts -->
+
+  <!--[Core] <NeedBeauty.stages.0.label>hideous environment</NeedBeauty.stages.0.label>-->
+  <!--[Core] <NeedBeauty.stages.0.description>This place is unbearably grotesque. I can't look at this any more.</NeedBeauty.stages.0.description>-->
+  <!--[Core] <NeedBeauty.stages.1.label>ugly environment</NeedBeauty.stages.1.label>-->
+  <!--[Core] <NeedBeauty.stages.1.description>This place is really ugly. I wish I didn't have to look at this any more.</NeedBeauty.stages.1.description>-->
+  <!--[Core] <NeedBeauty.stages.2.label>unsightly environment</NeedBeauty.stages.2.label>-->
+  <!--[Core] <NeedBeauty.stages.2.description>This place is kind of unsightly. I wish I didn't have to look at all this.</NeedBeauty.stages.2.description>-->
+  <!--[Core] <NeedBeauty.stages.3.label>pretty environment</NeedBeauty.stages.3.label>-->
+  <!--[Core] <NeedBeauty.stages.3.description>This place looks nice.</NeedBeauty.stages.3.description>-->
+  <!--[Core] <NeedBeauty.stages.4.label>beautiful environment</NeedBeauty.stages.4.label>-->
+  <!--[Core] <NeedBeauty.stages.4.description>I really like this place. It's beautiful.</NeedBeauty.stages.4.description>-->
+  <!--[Core] <NeedBeauty.stages.5.label>gorgeous environment</NeedBeauty.stages.5.label>-->
+  <!--[Core] <NeedBeauty.stages.5.description>This place is beautiful. It lifts me up and makes me love life.</NeedBeauty.stages.5.description>-->
+
+
+  <!-- Aesthete NeedBeauty Thoughts -->
+
+  <NeedBeautyAesthete.stages.0.label>hideous environment</NeedBeautyAesthete.stages.0.label>
+  <NeedBeautyAesthete.stages.0.description>This place is unbearable. Get me out of here....</NeedBeautyAesthete.stages.0.description>
+  <NeedBeautyAesthete.stages.1.label>very ugly environment</NeedBeautyAesthete.stages.1.label>
+  <NeedBeautyAesthete.stages.1.description>This place is really unpleasant. I don't want to be here.</NeedBeautyAesthete.stages.1.description>
+  <NeedBeautyAesthete.stages.2.label>ugly environment</NeedBeautyAesthete.stages.2.label>
+  <NeedBeautyAesthete.stages.2.description>This place is unpleasant to be in.</NeedBeautyAesthete.stages.2.description>
+  <NeedBeautyAesthete.stages.3.label>pleasant environment</NeedBeautyAesthete.stages.3.label>
+  <NeedBeautyAesthete.stages.3.description>This place is nice.</NeedBeautyAesthete.stages.3.description>
+  <NeedBeautyAesthete.stages.4.label>very pleasant environment</NeedBeautyAesthete.stages.4.label>
+  <NeedBeautyAesthete.stages.4.description>I really like this place. It's beautiful.</NeedBeautyAesthete.stages.4.description>
+  <NeedBeautyAesthete.stages.5.label>beautiful environment</NeedBeautyAesthete.stages.5.label>
+  <NeedBeautyAesthete.stages.5.description>This place is beautiful. It lifts me up and makes me love life.</NeedBeautyAesthete.stages.5.description>
+
+
+  <!-- Disturbed Sleep Thoughts -->
+
+  <!--[Core] <SleepDisturbed.stages.0.label>disturbed sleep</SleepDisturbed.stages.0.label>-->
+  <!--[Core] <SleepDisturbed.stages.0.description>I was disturbed during sleep by people moving around nearby. A private room would solve this.</SleepDisturbed.stages.0.description>-->
+
+
+</LanguageData>
