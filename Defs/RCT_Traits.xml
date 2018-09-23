@@ -598,7 +598,7 @@
 	
 	<TraitDef>
 		<defName>RCT_QuickLearner</defName>
-		<commonality>0.3</commonality>
+		<commonality>0.01</commonality>
 		<degreeDatas>
 			<li>
 				<label>quick learner</label>
@@ -681,7 +681,7 @@
 
 	<TraitDef>
 		<defName>RCT_Dodging</defName>
-		<commonality>0.7</commonality>
+		<commonality>0.01</commonality>
 		<degreeDatas>
 			<li>
 				<label>sluggish</label>
@@ -882,4 +882,59 @@
 		</degreeDatas>
 	</TraitDef>
 
+
+	<TraitDef>
+		<defName>RCT_BrownThumb</defName>
+		<commonality>0.3</commonality>
+		<degreeDatas>
+			<li>
+				<label>brown thumb</label>
+				<description>[PAWN_nameDef] is a terrible gardener. The only thing [PAWN_pronoun] seems able to grow is weeds.</description>
+				<statOffsets>
+					<PlantHarvestYield>-0.15</PlantHarvestYield>
+					<PlantWorkSpeed>-0.15</PlantWorkSpeed>
+				</statOffsets>
+				<skillGains>
+					<li>
+						<key>Plants</key>
+						<value>-2</value>
+					</li>
+				</skillGains>
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+			<li>RCT_GreenThumb</li>
+			<li>RCT_Aptitude</li>
+		</conflictingTraits>
+	</TraitDef>
+
+	<TraitDef>
+		<defName>RCT_GreenThumb</defName>
+		<commonality>0.3</commonality>
+		<degreeDatas>
+			<li>
+				<label>Green thumb</label>
+				<description>[PAWN_nameDef] is a great gardener. The only thing [PAWN_pronoun] is a greener world.</description>
+				<statOffsets>
+					<PlantHarvestYield>0.15</PlantHarvestYield>
+					<PlantWorkSpeed>0.15</PlantWorkSpeed>
+				</statOffsets>
+				<skillGains>
+					<li>
+						<key>Plants</key>
+						<value>2</value>
+					</li>
+				</skillGains>
+			</li>
+		</degreeDatas>
+		<requiredWorkTypes>
+			<li>Growing</li>
+			<li>PlantCutting</li>
+		</requiredWorkTypes>
+		<conflictingTraits>
+			<li>RCT_Aptitude</li>
+			<li>RCT_BrownThumb</li>
+			<li>RCT_Rockhound</li>
+		</conflictingTraits>
+	</TraitDef>
 </Defs>
