@@ -343,7 +343,7 @@
 		<commonality>1</commonality>
 		<degreeDatas>
 			<li>
-				<label>ironman</label>
+				<label>unstoppable</label>
 				<description>[PAWN_nameDef] has an exceptionally high tolerance for pain. [PAWN_pronoun] is unlikely to be immobilized by it.</description>
 				<commonality>0.25</commonality>
 				<degree>2</degree>
@@ -352,7 +352,7 @@
 				</statOffsets>
 			</li>
 			<li>
-				<label>tough</label>
+				<label>ironman</label>
 				<description>[PAWN_nameDef] has a high tolerance for pain.</description>
 				<commonality>0.4</commonality>
 				<degree>1</degree>
@@ -410,21 +410,36 @@
 			<li>
 				<label>near-sighted</label>
 				<description>[PAWN_nameDef] has a hard time seeing things clearly unless [PAWN_pronoun] is relatively close to them.</description>
-				<commonality>0.3</commonality>
+				<commonality>0.35</commonality>
 				<degree>-1</degree>
 				<statOffsets>
-					<ShootingAccuracyPawn>-0.25</ShootingAccuracyPawn>
+					<ShootingAccuracyPawn>-25</ShootingAccuracyPawn>
+					<MeleeHitChance>10</MeleeHitChance>
 					<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
 				</statOffsets>
 			</li>
 			<li>
 				<label>eagle-eyed</label>
 				<description>[PAWN_nameDef] has a keen eye, and can quickly spot targets.</description>
-				<commonality>0.2</commonality>
+				<commonality>0.35</commonality>
 				<degree>1</degree>
 				<statOffsets>
-					<MeleeHitChance>0.1</MeleeHitChance>
-					<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
+					<MeleeHitChance>5</MeleeHitChance>
+					<ShootingAccuracyPawn>25</ShootingAccuracyPawn>
+				</statOffsets>
+				<skillGains>
+					<li><key>Shooting</key><value>2</value></li>
+				</skillGains>
+			</li>
+			<li>
+				<label>far-sighted</label>
+				<description>[PAWN_nameDef] has a keen eye, and can quickly spot targets.</description>
+				<commonality>0.3</commonality>
+				<degree>2</degree>
+				<statOffsets>
+					<MeleeHitChance>-10</MeleeHitChance>
+					<ShootingAccuracyPawn>10</ShootingAccuracyPawn>
+					<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
 				</statOffsets>
 				<skillGains>
 					<li><key>Shooting</key><value>2</value></li>
@@ -767,7 +782,7 @@
 				<degree>1</degree>
 				<statOffsets>
 					<AimingDelayFactor>0.25</AimingDelayFactor>
-					<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
+					<ShootingAccuracyPawn>25</ShootingAccuracyPawn>
 				</statOffsets>
 			</li>
 			<li>
@@ -777,7 +792,7 @@
 				<degree>-1</degree>
 				<statOffsets>
 					<AimingDelayFactor>-0.5</AimingDelayFactor>
-					<ShootingAccuracyPawn>-0.25</ShootingAccuracyPawn>
+					<ShootingAccuracyPawn>-25</ShootingAccuracyPawn>
 				</statOffsets>
 			</li>
 			<li>
@@ -787,7 +802,7 @@
 				<degree>2</degree>
 				<statOffsets>
 					<AimingDelayFactor>-0.5</AimingDelayFactor>
-					<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
+					<ShootingAccuracyPawn>25</ShootingAccuracyPawn>
 				</statOffsets>
 				<skillGains>
 					<li><key>Shooting</key><value>2</value></li>

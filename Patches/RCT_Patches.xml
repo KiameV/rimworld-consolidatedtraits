@@ -292,4 +292,67 @@
 		</value>
 	</Operation>
 
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/TraitDef[defName = "FastLearner"]/conflictingTraits</xpath>
+		<value>
+			<li>TooSmart</li>
+			<li>RCT_Dunce</li>
+			<li>RCT_Savant</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/TraitDef[defName = "Tough"]/degreeDatas/li[contains(.,"tough")]</xpath>
+		<value>
+			<commonality>0.4</commonality>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/TraitDef[defName = "Tough"]</xpath>
+		<value>
+			<conflictingTraits>
+				<li>Wimp</li>
+				<li>RCT_PainThreshold</li>
+			</conflictingTraits>
+		</value>
+	</Operation>
+
+	<!--<Operation Class="PatchOperationAdd">
+		<xpath>*/TraitDef[defName = "Tough"]/degreeDatas</xpath>
+		<value>
+			<li>
+				<label>ironman</label>
+				<description>[PAWN_nameDef] has an exceptionally high tolerance for pain. [PAWN_pronoun] is unlikely to be immobilized by it.</description>
+				<commonality>0.25</commonality>
+				<degree>2</degree>
+				<statOffsets>
+					<PainShockThreshold>0.65</PainShockThreshold>
+				</statOffsets>
+			</li>
+			<li>
+				<label>low pain tolerance</label>
+				<description>[PAWN_nameDef] will become immobilized by pain more quickly than most.</description>
+				<commonality>0.3</commonality>
+				<degree>-1</degree>
+				<statOffsets>
+					<PainShockThreshold>-0.33</PainShockThreshold>
+				</statOffsets>
+			</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/TraitDef[defName = "Nimble"]/degreeDatas</xpath>
+		<value>
+			<li>
+				<label>sluggish</label>
+				<description>[PAWN_nameDef] is not very good at getting out of the way of blows.</description>
+				<degree>-1</degree>
+				<statOffsets>
+					<MeleeDodgeChance>-10</MeleeDodgeChance>
+				</statOffsets>
+			</li>
+		</value>
+	</Operation>-->
 </Patch>

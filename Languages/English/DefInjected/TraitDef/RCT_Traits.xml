@@ -42,9 +42,9 @@
   <RCT_Aptitude.degreeDatas.1.label>coordinated</RCT_Aptitude.degreeDatas.1.label>
   <RCT_Aptitude.degreeDatas.1.description>[PAWN_nameDef] is unusually coordinated, and good at most any sort of skilled labor.</RCT_Aptitude.degreeDatas.1.description>
 
-  <RCT_PainThreshold.degreeDatas.0.label>ironman</RCT_PainThreshold.degreeDatas.0.label>
+  <RCT_PainThreshold.degreeDatas.0.label>unstoppable</RCT_PainThreshold.degreeDatas.0.label>
   <RCT_PainThreshold.degreeDatas.0.description>[PAWN_nameDef] has an exceptionally high tolerance for pain. [PAWN_pronoun] is unlikely to be immobilized by it.</RCT_PainThreshold.degreeDatas.0.description>
-  <RCT_PainThreshold.degreeDatas.1.label>tough</RCT_PainThreshold.degreeDatas.1.label>
+  <RCT_PainThreshold.degreeDatas.1.label>ironman</RCT_PainThreshold.degreeDatas.1.label>
   <RCT_PainThreshold.degreeDatas.1.description>[PAWN_nameDef] has a high tolerance for pain.</RCT_PainThreshold.degreeDatas.1.description>
   <RCT_PainThreshold.degreeDatas.2.label>low pain tolerance</RCT_PainThreshold.degreeDatas.2.label>
   <RCT_PainThreshold.degreeDatas.2.description>[PAWN_nameDef] will become immobilized by pain more quickly than most.</RCT_PainThreshold.degreeDatas.2.description>
@@ -56,6 +56,8 @@
   <RCT_Eyesight.degreeDatas.0.description>[PAWN_nameDef] has a hard time seeing things clearly unless [PAWN_pronoun] is relatively close to them.</RCT_Eyesight.degreeDatas.0.description>
   <RCT_Eyesight.degreeDatas.1.label>eagle-eyed</RCT_Eyesight.degreeDatas.1.label>
   <RCT_Eyesight.degreeDatas.1.description>[PAWN_nameDef] has a keen eye, and can quickly spot targets.</RCT_Eyesight.degreeDatas.1.description>
+  <RCT_Eyesight.degreeDatas.2.label>far-sighted</RCT_Eyesight.degreeDatas.2.label>
+  <RCT_Eyesight.degreeDatas.2.description>[PAWN_nameDef] has a hard time seeing things clearly unless [PAWN_pronoun] is relatively far from them.</RCT_Eyesight.degreeDatas.2.description>
 
   <RCT_NeatFreak.degreeDatas.0.label>neat freak</RCT_NeatFreak.degreeDatas.0.label>
   <RCT_NeatFreak.degreeDatas.0.description>[PAWN_nameDef] is fastidious to a fault.</RCT_NeatFreak.degreeDatas.0.description>
