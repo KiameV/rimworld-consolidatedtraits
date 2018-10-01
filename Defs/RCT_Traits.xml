@@ -413,8 +413,8 @@
 				<commonality>0.35</commonality>
 				<degree>-1</degree>
 				<statOffsets>
-					<ShootingAccuracyPawn>-25</ShootingAccuracyPawn>
-					<MeleeHitChance>10</MeleeHitChance>
+					<ShootingAccuracyPawn>-4</ShootingAccuracyPawn>
+					<MeleeHitChance>2</MeleeHitChance>
 					<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
 				</statOffsets>
 			</li>
@@ -424,8 +424,8 @@
 				<commonality>0.35</commonality>
 				<degree>1</degree>
 				<statOffsets>
-					<MeleeHitChance>5</MeleeHitChance>
-					<ShootingAccuracyPawn>25</ShootingAccuracyPawn>
+					<MeleeHitChance>1</MeleeHitChance>
+					<ShootingAccuracyPawn>5</ShootingAccuracyPawn>
 				</statOffsets>
 				<skillGains>
 					<li><key>Shooting</key><value>2</value></li>
@@ -437,8 +437,8 @@
 				<commonality>0.3</commonality>
 				<degree>2</degree>
 				<statOffsets>
-					<MeleeHitChance>-10</MeleeHitChance>
-					<ShootingAccuracyPawn>10</ShootingAccuracyPawn>
+					<MeleeHitChance>-2</MeleeHitChance>
+					<ShootingAccuracyPawn>3</ShootingAccuracyPawn>
 					<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
 				</statOffsets>
 				<skillGains>
@@ -782,7 +782,7 @@
 				<degree>1</degree>
 				<statOffsets>
 					<AimingDelayFactor>0.25</AimingDelayFactor>
-					<ShootingAccuracyPawn>25</ShootingAccuracyPawn>
+					<ShootingAccuracyPawn>3</ShootingAccuracyPawn>
 				</statOffsets>
 			</li>
 			<li>
@@ -792,7 +792,7 @@
 				<degree>-1</degree>
 				<statOffsets>
 					<AimingDelayFactor>-0.5</AimingDelayFactor>
-					<ShootingAccuracyPawn>-25</ShootingAccuracyPawn>
+					<ShootingAccuracyPawn>-3</ShootingAccuracyPawn>
 				</statOffsets>
 			</li>
 			<li>
@@ -802,7 +802,7 @@
 				<degree>2</degree>
 				<statOffsets>
 					<AimingDelayFactor>-0.5</AimingDelayFactor>
-					<ShootingAccuracyPawn>25</ShootingAccuracyPawn>
+					<ShootingAccuracyPawn>7</ShootingAccuracyPawn>
 				</statOffsets>
 				<skillGains>
 					<li><key>Shooting</key><value>2</value></li>
