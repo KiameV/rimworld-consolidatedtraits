@@ -96,14 +96,11 @@ xcopy "$(ProjectDir)..\About\Preview.png" "$(OutDir)..\About\" /Y /I
 xcopy "$(ProjectDir)..\About\PublishedFileId.txt" "$(OutDir)..\About\" /Y /I
 
 
-xcopy "$(ProjectDir)..\Defs\*.*" "$(OutDir)..\Defs /Y /I /E
+xcopy "$(ProjectDir)..\Defs\*.*" "$(OutDir)..\Defs" /Y /I /E
 
 
 
-
-
-xcopy "$(ProjectDir)..\Patches\*.*" "$(OutDir)..\Patches /Y /I /E
-
+xcopy "$(ProjectDir)..\Patches\*.*" "$(OutDir)..\Patches" /Y /I /E
 
 
 

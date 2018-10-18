@@ -116,8 +116,39 @@
 		<xpath>*/TraitDef[defName = "FastLearner"]/conflictingTraits</xpath>
 		<value>
 			<li>RCT_Dunce</li>
-			<li>RCT_QuickLearner</li>
 			<li>RCT_Savant</li>
+			<li>TooSmart</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/TraitDef[defName = "FastLearner"]/degreeDatas/li[label = "fast learner"]</xpath>
+		<value>
+			<commonality>0.30</commonality>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/TraitDef[defName = "FastLearner"]/degreeDatas</xpath>
+		<value>
+			<li>
+				<label>decent learner</label>
+				<description>[PAWN_nameDef] has always picked up skills pretty quickly.</description>
+				<degree>2</degree>
+				<commonality>0.50</commonality>
+				<statOffsets>
+					<GlobalLearningFactor>0.25</GlobalLearningFactor>
+				</statOffsets>
+			</li>
+			<li>
+				<label>slow learner</label>
+				<description>[PAWN_nameDef] doesn't pick up skills easily.</description>
+				<degree>-1</degree>
+				<commonality>0.20</commonality>
+				<statOffsets>
+					<GlobalLearningFactor>-0.25</GlobalLearningFactor>
+				</statOffsets>
+			</li>
 		</value>
 	</Operation>
 
@@ -161,12 +192,12 @@
 		</operations>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
+	<!--<Operation Class="PatchOperationAdd">
 		<xpath>*/TraitDef[defName = "NaturalMood"]/conflictingTraits</xpath>
 		<value>
 			<li>RCT_Bipolar</li>
 		</value>
-	</Operation>
+	</Operation>-->
 
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -191,6 +222,7 @@
 		</value>
 	</Operation>
 
+
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
 		<operations>
@@ -204,14 +236,40 @@
 					<conflictingTraits/>
 				</value>
 			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/TraitDef[defName = "Nimble"]/degreeDatas</xpath>
+				<value>
+					<li>
+						<label>deftly dodger</label>
+						<description>[PAWN_nameDef] has cat-like reflexes, and excels at evading attacks.</description>
+						<degree>2</degree>
+						<statOffsets>
+							<MeleeDodgeChance>20</MeleeDodgeChance>
+						</statOffsets>
+					</li>
+					<li>
+						<label>sluggish</label>
+						<description>[PAWN_nameDef] is not very good at getting out of the way of blows.</description>
+						<degree>-1</degree>
+						<statOffsets>
+							<MeleeDodgeChance>-10</MeleeDodgeChance>
+						</statOffsets>
+					</li>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/TraitDef[defName = "Nimble"]/degreeDatas/li[label = "nimble"]/statOffset</xpath>
+				<value>
+					<MeleeDoddgeChance>10</MeleeDoddgeChance>
+				</value>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/TraitDef[defName = "Nimble"]/degreeDatas/li[label = "nimble"]</xpath>
+				<value>
+					<degree>1</degree>
+				</value>
+			</li>
 		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/TraitDef[defName = "Nimble"]/conflictingTraits</xpath>
-		<value>
-			<li>RCT_Dodging</li>
-		</value>
 	</Operation>
 	
 	<!--<Operation Class="PatchOperationSequence">
@@ -257,7 +315,7 @@
 		<xpath>*/TraitDef[defName = "TooSmart"]/conflictingTraits</xpath>
 		<value>
 			<li>RCT_Dunce</li>
-			<li>RCT_QuickLearner</li>
+			<li>FastLearner</li>
 			<li>RCT_Savant</li>
 		</value>
 	</Operation>
@@ -293,15 +351,6 @@
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/TraitDef[defName = "FastLearner"]/conflictingTraits</xpath>
-		<value>
-			<li>TooSmart</li>
-			<li>RCT_Dunce</li>
-			<li>RCT_Savant</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
 		<xpath>*/TraitDef[defName = "Tough"]/degreeDatas/li[contains(.,"tough")]</xpath>
 		<value>
 			<commonality>0.4</commonality>
@@ -318,41 +367,50 @@
 		</value>
 	</Operation>
 
-	<!--<Operation Class="PatchOperationAdd">
-		<xpath>*/TraitDef[defName = "Tough"]/degreeDatas</xpath>
+	<!-- Thoughts -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThoughtDef[defName = "SleepDisturbed"]</xpath>
 		<value>
-			<li>
-				<label>ironman</label>
-				<description>[PAWN_nameDef] has an exceptionally high tolerance for pain. [PAWN_pronoun] is unlikely to be immobilized by it.</description>
-				<commonality>0.25</commonality>
-				<degree>2</degree>
-				<statOffsets>
-					<PainShockThreshold>0.65</PainShockThreshold>
-				</statOffsets>
-			</li>
-			<li>
-				<label>low pain tolerance</label>
-				<description>[PAWN_nameDef] will become immobilized by pain more quickly than most.</description>
-				<commonality>0.3</commonality>
-				<degree>-1</degree>
-				<statOffsets>
-					<PainShockThreshold>-0.33</PainShockThreshold>
-				</statOffsets>
-			</li>
+			<nullifyingTraits>
+				<li>RCT_DeepSleeper</li>
+			</nullifyingTraits>
 		</value>
 	</Operation>
 
 	<Operation Class="PatchOperationAdd">
-		<xpath>*/TraitDef[defName = "Nimble"]/degreeDatas</xpath>
+		<xpath>*/ThoughtDef[defName = "NeedBeauty"]</xpath>
 		<value>
-			<li>
-				<label>sluggish</label>
-				<description>[PAWN_nameDef] is not very good at getting out of the way of blows.</description>
-				<degree>-1</degree>
-				<statOffsets>
-					<MeleeDodgeChance>-10</MeleeDodgeChance>
-				</statOffsets>
-			</li>
+			<nullifyingTraits>
+				<li>RCT_Aesthete</li>
+			</nullifyingTraits>
 		</value>
-	</Operation>-->
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThoughtDef[defName = "EnvironmentDark"]/nullifyingTraits</xpath>
+		<value>
+			<li>RCT_Nyctophobe</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThoughtDef[defName = "EnvironmentHot"]</xpath>
+		<value>
+			<nullifyingTraits>
+				<li>RCT_ColdLover</li>
+				<li>RCT_HeatLover</li>
+			</nullifyingTraits>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>*/ThoughtDef[defName = "EnvironmentCold"]</xpath>
+		<value>
+			<nullifyingTraits>
+				<li>RCT_ColdLover</li>
+				<li>RCT_HeatLover</li>
+			</nullifyingTraits>
+		</value>
+	</Operation>
 </Patch>

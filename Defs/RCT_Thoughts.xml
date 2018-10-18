@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-	<!-- Base Cold Thoughts -->
+	<!-- Base Cold Thoughts
 	<ThoughtDef>
 		<defName>EnvironmentCold</defName>
 		<workerClass>ThoughtWorker_Cold</workerClass>
@@ -27,7 +27,7 @@
 				<baseMoodEffect>-10</baseMoodEffect>
 			</li>
 		</stages>
-	</ThoughtDef>
+	</ThoughtDef>-->
 
 	<!-- Cold-Lover Cold Thoughts -->
 	<ThoughtDef>
@@ -83,7 +83,7 @@
 		</stages>
 	</ThoughtDef>
 
-	<!-- Base Heat Thoughts -->
+	<!-- Base Heat Thoughts
 	<ThoughtDef>
 		<defName>EnvironmentHot</defName>
 		<workerClass>ThoughtWorker_Hot</workerClass>
@@ -114,7 +114,7 @@
 				<baseMoodEffect>-20</baseMoodEffect>
 			</li>     
 		</stages>
-	</ThoughtDef>
+	</ThoughtDef>-->
 
 	<!-- Cold-Lover Heat Thoughts -->
 	<ThoughtDef>
@@ -210,9 +210,9 @@
 				<baseMoodEffect>-8</baseMoodEffect>
 			</li>
 		</stages>
-	</ThoughtDef> -->
+	</ThoughtDef>
 
-	<!-- Bipolar Random Mood Thoughts
+	 Bipolar Random Mood Thoughts
 	<ThoughtDef>
 		<defName>FeelingRandomBipolar</defName>
 		<workerClass>ThoughtWorker_RandomMood</workerClass>
@@ -242,23 +242,7 @@
 				<baseMoodEffect>-32</baseMoodEffect>
 			</li>
 		</stages>
-	</ThoughtDef> -->
-
-	<!-- Base In Darkness Thoughts -->
-	<ThoughtDef>
-		<defName>EnvironmentDark</defName>
-		<workerClass>ThoughtWorker_Dark</workerClass>
-		<nullifyingTraits>
-			<li>RCT_Nyctophobe</li>
-		</nullifyingTraits>
-		<stages>
-			<li>
-				<label>in darkness</label>
-				<description>I've been in the dark for a while. I don't like it.</description>
-				<baseMoodEffect>-3</baseMoodEffect>
-			</li>
-		</stages>
-	</ThoughtDef>
+	</ThoughtDef>-->
 	
 	<!-- Nyctophobe In Darkness Thoughts -->
 	<ThoughtDef>
@@ -272,7 +256,7 @@
 			<li>
 				<label>in darkness</label>
 				<description>I can't see anything! I don't like this at all. I... I think I saw something move....</description>
-				<baseMoodEffect>-12</baseMoodEffect>
+				<baseMoodEffect>-15</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>
@@ -293,49 +277,8 @@
 			</li>
 		</stages>
 	</ThoughtDef>
-
-	<!-- Base NeedBeauty Thoughts -->
-	<ThoughtDef>
-		<defName>NeedBeauty</defName>
-		<workerClass>ThoughtWorker_NeedBeauty</workerClass>
-		<nullifyingTraits>
-			<li>RCT_Aesthete</li>
-		</nullifyingTraits>
-		<stages>
-			<li>
-				<label>hideous environment</label>
-				<description>This place is unbearable. Get me out of here....</description>
-				<baseMoodEffect>-15</baseMoodEffect>
-			</li>
-			<li>
-				<label>very ugly environment</label>
-				<description>This place is really unpleasant. I don't want to be here.</description>
-				<baseMoodEffect>-10</baseMoodEffect>
-			</li>
-			<li>
-				<label>ugly environment</label>
-				<description>This place is unpleasant to be in.</description>
-				<baseMoodEffect>-5</baseMoodEffect>
-			</li>
-			<li>
-				<label>pleasant environment</label>
-				<description>This place is nice.</description>
-				<baseMoodEffect>5</baseMoodEffect>
-			</li>
-			<li>
-				<label>very pleasant environment</label>
-				<description>I really like this place. It's beautiful.</description>
-				<baseMoodEffect>10</baseMoodEffect>
-			</li>
-			<li>
-				<label>beautiful environment</label>
-				<description>This place is beautiful. It lifts me up and makes me love life.</description>
-				<baseMoodEffect>15</baseMoodEffect>
-			</li>
-		</stages>
-	</ThoughtDef>
 	
-	<!-- Aesthete NeedBeauty Thoughts -->
+	<!-- Aesthete NeedBeauty Thoughts
 	<ThoughtDef>
 		<defName>NeedBeautyAesthete</defName>
 		<workerClass>ThoughtWorker_NeedBeauty</workerClass>
@@ -374,26 +317,5 @@
 				<baseMoodEffect>30</baseMoodEffect>
 			</li>
 		</stages>
-	</ThoughtDef>
-
-	<!-- Disturbed Sleep Thoughts -->
-	<ThoughtDef>
-		<defName>SleepDisturbed</defName>
-		<icon>Things/Mote/ThoughtSymbol/SleepZ</icon>
-		<showBubble>true</showBubble>
-		<durationDays>0.5</durationDays>
-		<stackLimit>4</stackLimit>
-		<stackedEffectMultiplier>0.4</stackedEffectMultiplier>
-		<nullifyingTraits>
-			<li>RCT_DeepSleeper</li>
-		</nullifyingTraits>
-		<stages>
-			<li>
-				<label>disturbed sleep</label>
-				<description>I was disturbed during sleep by people moving around nearby. A private room would solve this.</description>
-				<baseMoodEffect>-4</baseMoodEffect>
-			</li>
-		</stages>
-	</ThoughtDef>
-
+	</ThoughtDef>-->
 </Defs>

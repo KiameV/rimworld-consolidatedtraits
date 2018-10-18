@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 
-	<name>Consolidated Traits - B19</name>
+	<name>[KV] Consolidated Traits - 1.0</name>
 	<author>Rainbeau Flambe (original) &amp; Kiame Vivacity</author>
 	<url>https://ludeon.com/forums/index.php?topic=44577.0</url>
-	<targetVersion>0.19.0</targetVersion>
+	<targetVersion>1.0.0</targetVersion>
 	<description>
 
 When I started looking for a mod to add more traits to the game, I quickly realized three things about the various trait collection mods that are available: they all have some traits I really like, but also some I dislike, and none of them had all the traits I wanted; they don't necessarily work very well together due to conceptual overlaps or conflicts; and some of them are buggy in one way or another.

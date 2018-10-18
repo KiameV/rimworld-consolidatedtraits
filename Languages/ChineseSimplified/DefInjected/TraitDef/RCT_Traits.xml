@@ -80,9 +80,6 @@
   <RCT_Medic.degreeDatas.2.label>妙手回春</RCT_Medic.degreeDatas.2.label>
   <RCT_Medic.degreeDatas.2.description>[PAWN_nameDef]在医学方面天赋异禀。在[PAWN_possessive]稳定、熟练的手法和[PAWN_possessive]鼓舞人心的临床态度，患者在[PAWN_possessive]照料下无所畏惧。</RCT_Medic.degreeDatas.2.description>
 
-  <RCT_QuickLearner.degreeDatas.0.label>天资聪颖</RCT_QuickLearner.degreeDatas.0.label>
-  <RCT_QuickLearner.degreeDatas.0.description>[PAWN_nameDef]学起东西来很快。</RCT_QuickLearner.degreeDatas.0.description>
-
   <RCT_Rockhound.degreeDatas.0.label>奇石收藏家</RCT_Rockhound.degreeDatas.0.label>
   <RCT_Rockhound.degreeDatas.0.description>[PAWN_nameDef]和矿石在一起很快乐。[PAWN_possessive]采矿速度很快，但[PAWN_possessive]对其他领域低下的兴趣导致[PAWN_objective]做别的工作时速度下降。并且他很讨厌耕种。</RCT_Rockhound.degreeDatas.0.description>
 

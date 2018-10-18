@@ -67,7 +67,7 @@
 		</conflictingTraits>
 	</TraitDef>
 
-	<TraitDef>
+	<!--<TraitDef>
 		<defName>RCT_Bipolar</defName>
 		<commonality>0.2</commonality>
 		<degreeDatas>
@@ -79,7 +79,7 @@
 		<conflictingTraits>
 			<li>NaturalMood</li>
 		</conflictingTraits>
-	</TraitDef>
+	</TraitDef>-->
 
 	<TraitDef>
 		<defName>RCT_Builder</defName>
@@ -205,7 +205,6 @@
 			<li>TooSmart</li>
 			<li>FastLearner</li>
 			<li>RCT_Inventor</li>
-			<li>RCT_QuickLearner</li>
 			<li>RCT_Savant</li>
 		</conflictingTraits>
 	</TraitDef>
@@ -371,6 +370,7 @@
 			</li>
 		</degreeDatas>
 		<conflictingTraits>
+			<li>Tough</li>
 			<li>Wimp</li>
 		</conflictingTraits>
 	</TraitDef>
@@ -405,41 +405,27 @@
 
 	<TraitDef>
 		<defName>RCT_Eyesight</defName>
-		<commonality>0.5</commonality>
+		<commonality>0.3</commonality>
 		<degreeDatas>
 			<li>
-				<label>near-sighted</label>
-				<description>[PAWN_nameDef] has a hard time seeing things clearly unless [PAWN_pronoun] is relatively close to them.</description>
+				<label>cranial nerve palsy</label>
+				<description>[PAWN_nameDef] has a hard time seeing things clearly unless [PAWN_pronoun].</description>
 				<commonality>0.35</commonality>
 				<degree>-1</degree>
 				<statOffsets>
 					<ShootingAccuracyPawn>-4</ShootingAccuracyPawn>
-					<MeleeHitChance>2</MeleeHitChance>
-					<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
+					<MeleeHitChance>-4</MeleeHitChance>
+					<WorkSpeedGlobal>-0.2</WorkSpeedGlobal>
 				</statOffsets>
 			</li>
 			<li>
 				<label>eagle-eyed</label>
 				<description>[PAWN_nameDef] has a keen eye, and can quickly spot targets.</description>
-				<commonality>0.35</commonality>
+				<commonality>0.65</commonality>
 				<degree>1</degree>
 				<statOffsets>
 					<MeleeHitChance>1</MeleeHitChance>
 					<ShootingAccuracyPawn>5</ShootingAccuracyPawn>
-				</statOffsets>
-				<skillGains>
-					<li><key>Shooting</key><value>2</value></li>
-				</skillGains>
-			</li>
-			<li>
-				<label>far-sighted</label>
-				<description>[PAWN_nameDef] has a keen eye, and can quickly spot targets.</description>
-				<commonality>0.3</commonality>
-				<degree>2</degree>
-				<statOffsets>
-					<MeleeHitChance>-2</MeleeHitChance>
-					<ShootingAccuracyPawn>3</ShootingAccuracyPawn>
-					<WorkSpeedGlobal>-0.1</WorkSpeedGlobal>
 				</statOffsets>
 				<skillGains>
 					<li><key>Shooting</key><value>2</value></li>
@@ -612,26 +598,6 @@
 	</TraitDef>
 	
 	<TraitDef>
-		<defName>RCT_QuickLearner</defName>
-		<commonality>0.01</commonality>
-		<degreeDatas>
-			<li>
-				<label>quick learner</label>
-				<description>[PAWN_nameDef] has always picked up skills pretty quickly.</description>
-				<statOffsets>
-					<GlobalLearningFactor>0.25</GlobalLearningFactor>
-				</statOffsets>
-			</li>
-		</degreeDatas>
-		<conflictingTraits>
-			<li>TooSmart</li>
-			<li>FastLearner</li>
-			<li>RCT_Dunce</li>
-			<li>RCT_Savant</li>
-		</conflictingTraits>
-	</TraitDef>
-
-	<TraitDef>
 		<defName>RCT_Rockhound</defName>
 		<commonality>0.3</commonality>
 		<degreeDatas>
@@ -690,33 +656,6 @@
 			<li>FastLearner</li>
 			<li>RCT_Aptitude</li>
 			<li>RCT_Dunce</li>
-			<li>RCT_QuickLearner</li>
-		</conflictingTraits>
-	</TraitDef>
-
-	<TraitDef>
-		<defName>RCT_Dodging</defName>
-		<commonality>0.01</commonality>
-		<degreeDatas>
-			<li>
-				<label>sluggish</label>
-				<description>[PAWN_nameDef] is not very good at getting out of the way of blows.</description>
-				<degree>-1</degree>
-				<statOffsets>
-					<MeleeDodgeChance>-0.5</MeleeDodgeChance>
-				</statOffsets>
-			</li>
-			<li>
-				<label>swift reflexes</label>
-				<description>[PAWN_nameDef] has cat-like reflexes, and excels at evading attacks.</description>
-				<degree>1</degree>
-				<statOffsets>
-					<MeleeDodgeChance>0.5</MeleeDodgeChance>
-				</statOffsets>
-			</li>
-		</degreeDatas>
-		<conflictingTraits>
-			<li>Nimble</li>
 		</conflictingTraits>
 	</TraitDef>
 
@@ -802,7 +741,7 @@
 				<degree>2</degree>
 				<statOffsets>
 					<AimingDelayFactor>-0.5</AimingDelayFactor>
-					<ShootingAccuracyPawn>7</ShootingAccuracyPawn>
+					<ShootingAccuracyPawn>5</ShootingAccuracyPawn>
 				</statOffsets>
 				<skillGains>
 					<li><key>Shooting</key><value>2</value></li>
