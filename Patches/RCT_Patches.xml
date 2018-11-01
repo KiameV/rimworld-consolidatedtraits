@@ -368,49 +368,96 @@
 	</Operation>
 
 	<!-- Thoughts -->
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThoughtDef[defName = "SleepDisturbed"]</xpath>
-		<value>
-			<nullifyingTraits>
-				<li>RCT_DeepSleeper</li>
-			</nullifyingTraits>
-		</value>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="SleepDisturbed"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="SleepDisturbed"]</xpath>
+				<value>
+					<nullifyingTraits>
+						<li>RCT_DeepSleeper</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
 	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThoughtDef[defName = "NeedBeauty"]</xpath>
-		<value>
-			<nullifyingTraits>
-				<li>RCT_Aesthete</li>
-			</nullifyingTraits>
-		</value>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="NeedBeauty"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="NeedBeauty"]</xpath>
+				<value>
+					<nullifyingTraits>
+						<li>RCT_Aesthete</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
 	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThoughtDef[defName = "EnvironmentDark"]/nullifyingTraits</xpath>
-		<value>
-			<li>RCT_Nyctophobe</li>
-		</value>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="EnvironmentDark"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="EnvironmentDark"]</xpath>
+				<value>
+					<nullifyingTraits>
+						<li>RCT_Nyctophobe</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
 	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThoughtDef[defName = "EnvironmentHot"]</xpath>
-		<value>
-			<nullifyingTraits>
-				<li>RCT_ColdLover</li>
-				<li>RCT_HeatLover</li>
-			</nullifyingTraits>
-		</value>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="EnvironmentHot"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="EnvironmentHot"]</xpath>
+				<value>
+					<nullifyingTraits>
+						<li>RCT_ColdLover</li>
+						<li>RCT_HeatLover</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
 	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>*/ThoughtDef[defName = "EnvironmentCold"]</xpath>
-		<value>
-			<nullifyingTraits>
-				<li>RCT_ColdLover</li>
-				<li>RCT_HeatLover</li>
-			</nullifyingTraits>
-		</value>
+	
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<li Class="PatchOperationTest">
+			  <xpath>*/ThoughtDef[defName="EnvironmentCold"]/nullifyingTraits</xpath>
+			  <success>Invert</success>
+			</li>
+			<li Class="PatchOperationAdd">
+				<xpath>*/ThoughtDef[defName="EnvironmentCold"]</xpath>
+				<value>
+					<nullifyingTraits>
+						<li>RCT_ColdLover</li>
+						<li>RCT_HeatLover</li>
+					</nullifyingTraits>
+				</value>
+			</li>
+		</operations>
 	</Operation>
 </Patch>

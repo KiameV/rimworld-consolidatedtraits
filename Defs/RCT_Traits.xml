@@ -741,7 +741,7 @@
 				<degree>2</degree>
 				<statOffsets>
 					<AimingDelayFactor>-0.5</AimingDelayFactor>
-					<ShootingAccuracyPawn>5</ShootingAccuracyPawn>
+					<ShootingAccuracyPawn>4</ShootingAccuracyPawn>
 				</statOffsets>
 				<skillGains>
 					<li><key>Shooting</key><value>2</value></li>
