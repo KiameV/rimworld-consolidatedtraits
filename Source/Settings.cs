@@ -29,61 +29,65 @@ namespace ConfigurableMaps.Settings
 
     public class Settings : ModSettings
     {
-        private readonly static List<TraitBackup> Backup = new List<TraitBackup>();
+        private readonly static Dictionary<string, TraitStat> Backup = new Dictionary<string, TraitStat>();
 
         private readonly Dictionary<string, TraitDef> TraitDefs = new Dictionary<string, TraitDef>();
         private TraitDef selected = null;
         private string[] comBuffer = { "", "", "", "", "", "", "", "", "", "", "" };
-        private FieldInfo comFI = typeof(TraitDef).GetField("commonality", BindingFlags.Instance | BindingFlags.NonPublic);
 
-        private List<TraitBackup> expose = null;
+        private List<TraitStat> expose = null;
 
         public void DoWindowContents(Rect rect)
         {
             this.Init();
 
-            Listing_Standard l = new Listing_Standard
-            {
-                ColumnWidth = rect.width / 2.0f
-            };
-            l.Begin(rect);
+            float x = rect.xMin, y = rect.yMin;
+            Widgets.Label(new Rect(x, y, 200, 32), "ConsolidatedTraits.EditTraits".Translate());
+            y += 40;
 
-            l.Label("ConsolidatedTraits.EditTraits".Translate());
-
+            x += 20;
             string label = (this.selected == null) ? "ConsolidatedTraits.SelectTrait".Translate() : this.selected.defName;
-            if (l.ButtonText(label))
+            if (Widgets.ButtonText(new Rect(x, y, 200, 32), label))
             {
                 this.DrawFloatingOptions();
             }
+            y += 60;
 
             if (this.selected != null)
             {
-                l.Gap();
-                l.Label(this.selected.defName);
-                float commonality = (float)this.comFI.GetValue(this.selected);
-                l.TextFieldNumericLabeled("ConsolidatedTraits.Commonality".Translate(), ref commonality, ref this.comBuffer[0], 0f, 10f);
-                this.comFI.SetValue(this.selected, commonality);
+                x += 10;
 
-                l.Gap();
+                Widgets.Label(new Rect(x, y, 200, 32), this.selected.defName);
+                y += 40;
+
+                float commonality = (float)TraitStat.CommonalityFI.GetValue(this.selected);
+                Widgets.TextFieldNumericLabeled(
+                    new Rect(0, y, 300, 32), 
+                    "ConsolidatedTraits.Commonality".Translate() + " ", ref commonality, ref this.comBuffer[0], 0f, 10f);
+                TraitStat.CommonalityFI.SetValue(this.selected, commonality);
+                y += 60;
+                
                 for (int i = 0; i < this.selected.degreeDatas.Count && i + 1 < this.comBuffer.Length; ++i)
                 {
                     TraitDegreeData d = this.selected.degreeDatas[i];
 
-                    l.Label("    " + d.label);
-                    l.TextFieldNumericLabeled("    " + "ConsolidatedTraits.Commonality".Translate(), ref d.commonality, ref this.comBuffer[i + 1], 0f, 10f);
+                    Widgets.Label(new Rect(x, y, 200, 32), "    " + d.label);
+                    y += 30;
+                    Widgets.TextFieldNumericLabeled(
+                        new Rect(x, y, 300, 32), 
+                        "    " + "ConsolidatedTraits.Commonality".Translate() + " ", ref d.commonality, ref this.comBuffer[i + 1], 0f, 10f);
+                    y += 40;
                 }
-                
-                l.Gap(20);
-                if (l.ButtonText("Reset"))
+
+                y += 60;
+                if (Widgets.ButtonText(new Rect(x, y, 100, 32), "Reset"))
                 {
                     this.ResetTrait(this.selected);
                 }
             }
 
-            l.End();
 
-
-            if (Widgets.ButtonText(new Rect(rect.x + 10, rect.yMax - 32, 100, 32), "ConsolidatedTraits.ResetAll".Translate()))
+            if (Widgets.ButtonText(new Rect(rect.xMax - 132, rect.yMax - 32, 100, 32), "ConsolidatedTraits.ResetAll".Translate()))
             {
                 foreach (TraitDef d in this.TraitDefs.Values)
                 {
@@ -94,33 +98,21 @@ namespace ConfigurableMaps.Settings
 
         private void ResetTrait(TraitDef t)
         {
-            foreach (TraitBackup b in Backup)
+            foreach (TraitDef d in this.TraitDefs.Values)
             {
-                if (b.Label.Equals(t.defName))
+                if (Backup.TryGetValue(d.defName, out TraitStat bu))
                 {
-                    this.comFI.SetValue(t, b.Value);
-                    if (b.DegreeData != null && t.degreeDatas != null)
-                    {
-                        foreach (TraitBackup bd in b.DegreeData)
-                        {
-                            foreach (TraitDegreeData data in t.degreeDatas)
-                            {
-                                if (data.label.Equals(bd.Label))
-                                {
-                                    data.commonality = bd.Value;
-                                }
-                            }
-                        }
-                    }
+                    bu.ApplyStats(d);
                 }
             }
-            if (t == this.selected)
+
+            if (this.selected != null)
                 SetBuffer(this.selected);
         }
 
         private void SetBuffer(TraitDef t)
         {
-            this.comBuffer[0] = ((float)this.comFI.GetValue(this.selected)).ToString("n4");
+            this.comBuffer[0] = ((float)TraitStat.CommonalityFI.GetValue(this.selected)).ToString("n4");
             for (int i = 0; i < this.selected.degreeDatas.Count && i + 1 < this.comBuffer.Length; ++i)
             {
                 this.comBuffer[i + 1] = this.selected.degreeDatas[i].commonality.ToString("n4");
@@ -135,10 +127,18 @@ namespace ConfigurableMaps.Settings
 
             if (Scribe.mode == LoadSaveMode.Saving)
             {
-                expose = new List<TraitBackup>();
+                expose = new List<TraitStat>();
                 foreach (TraitDef d in this.TraitDefs.Values)
                 {
-                    expose.Add(new TraitBackup(d.defName, (float)this.comFI.GetValue(d), d.degreeDatas));
+                    TraitStat s = new TraitStat(d);
+                    bool shouldExpose = true;
+                    if (Backup.TryGetValue(d.defName, out TraitStat bu))
+                    {
+                        shouldExpose = !bu.Equals(s);
+                    }
+
+                    if (shouldExpose)
+                        expose.Add(s);
                 }
             }
 
@@ -150,14 +150,14 @@ namespace ConfigurableMaps.Settings
             List<FloatMenuOption> options = new List<FloatMenuOption>();
             foreach (TraitDef d in this.TraitDefs.Values)
             {
-                if (d != this.selected)
+                //if (d != this.selected)
+                //{
+                options.Add(new FloatMenuOption(d.defName, delegate
                 {
-                    options.Add(new FloatMenuOption(d.defName, delegate
-                    {
-                        this.selected = d;
-                        this.SetBuffer(this.selected);
-                    }, MenuOptionPriority.Default, null, null, 0f, null, null));
-                }
+                    this.selected = d;
+                    this.SetBuffer(this.selected);
+                }, MenuOptionPriority.Default, null, null, 0f, null, null));
+                //}
             }
             Find.WindowStack.Add(new FloatMenu(options));
         }
@@ -174,30 +174,21 @@ namespace ConfigurableMaps.Settings
             {
                 foreach (TraitDef d in this.TraitDefs.Values)
                 {
-                    Backup.Add(new TraitBackup(d.defName, (float)this.comFI.GetValue(d), d.degreeDatas));
+                    Backup.Add(d.defName, new TraitStat(d));
                 }
             }
 
-            if (this.expose != null)
+            if (this.expose != null && this.TraitDefs != null && this.TraitDefs.Count > 0)
             {
-                foreach(TraitBackup t in this.expose)
+                foreach(TraitStat from in this.expose)
                 {
-                    if (this.TraitDefs.TryGetValue(t.Label, out TraitDef d))
+                    if (this.TraitDefs.TryGetValue(from.DefName, out TraitDef to))
                     {
-                        comFI.SetValue(d, t.Value);
-                        if (d.degreeDatas != null && t.DegreeData != null)
-                        {
-                            foreach (TraitDegreeData data in d.degreeDatas)
-                            {
-                                foreach (TraitBackup b in t.DegreeData)
-                                {
-                                    if (b.Label.Equals(data.label))
-                                    {
-                                        data.commonality = b.Value;
-                                    }
-                                }
-                            }
-                        }
+                        from.ApplyStats(to);
+                    }
+                    else
+                    {
+                        Log.Warning("Failed to apply trait settings to: " + from.DefName);
                     }
                 }
 
@@ -206,32 +197,141 @@ namespace ConfigurableMaps.Settings
             }
         }
 
-        private class TraitBackup : IExposable
+        private class TraitStat : IExposable
         {
-            public string Label;
+            public readonly static FieldInfo CommonalityFI = typeof(TraitDef).GetField("commonality", BindingFlags.Instance | BindingFlags.NonPublic);
+
+            public string DefName;
             public float Value;
-            public List<TraitBackup> DegreeData;
-            public TraitBackup() { }
-            public TraitBackup(string label, float value, List<TraitDegreeData> degreeData = null)
+            public List<TraitStat> DegreeData;
+            public TraitStat() { }
+            public TraitStat(TraitDef d)
             {
-                this.Label = label;
-                this.Value = value;
+                this.DefName = d.defName;
+                this.Value = (float)CommonalityFI.GetValue(d);
                 this.DegreeData = null;
-                if (degreeData != null && degreeData.Count > 0)
+                if (d.degreeDatas != null && d.degreeDatas.Count > 0)
                 {
-                    this.DegreeData = new List<TraitBackup>(degreeData.Count);
-                    foreach (TraitDegreeData d in degreeData)
+                    this.DegreeData = new List<TraitStat>(d.degreeDatas.Count);
+                    foreach (TraitDegreeData tdd in d.degreeDatas)
                     {
-                        this.DegreeData.Add(new TraitBackup(d.label, d.commonality));
+                        this.DegreeData.Add(new TraitStat(tdd));
                     }
                 }
+            }
+            public TraitStat(TraitDegreeData d)
+            {
+                this.DefName = d.label;
+                this.Value = d.commonality;
+            }
+
+            public bool ApplyStats(TraitDef d)
+            {
+                if (!d.defName.Equals(this.DefName))
+                {
+                    Log.Warning("Trying to apply stats [" + this.DefName + "] to wrong TraitDef: [" + d.defName + "]");
+                    return false;
+                }
+                CommonalityFI.SetValue(d, this.Value);
+                foreach (TraitStat from in this.DegreeData)
+                {
+                    bool found = false;
+                    foreach (TraitDegreeData to in d.degreeDatas)
+                    {
+                        if (from.DefName.Equals(to.label))
+                        {
+                            to.commonality = from.Value;
+                            found = true;
+                            break;
+                        }
+                    }
+                    if (!found)
+                    {
+                        Log.Warning("Unable to apply degree stat [" + from.DefName + "]");
+                    }
+                }
+                return true;
+            }
+
+            public bool ApplyStats(TraitDegreeData d)
+            {
+                if (!this.DefName.Equals(d.label))
+                {
+                    Log.Warning("Trying to apply stats [" + this.DefName + "] to wrong TraitDegreeData: [" + d.label + "]");
+                    return false;
+                }
+                d.commonality = this.Value;
+                return true;
             }
 
             public void ExposeData()
             {
-                Scribe_Values.Look(ref this.Label, "defName");
+                Scribe_Values.Look(ref this.DefName, "defName");
                 Scribe_Values.Look(ref this.Value, "value");
                 Scribe_Collections.Look(ref DegreeData, "data");
+            }
+
+            public override string ToString()
+            {
+                return "TraitStat: DefName: [" + this.DefName + "] Value: [" + this.DefName + "]";
+            }
+
+            public override int GetHashCode()
+            {
+                return this.ToString().GetHashCode();
+            }
+
+            public override bool Equals(object obj)
+            {
+                if (obj == null)
+                {
+                    return false;
+                }
+                
+                if (obj is TraitStat ts)
+                {
+                    if (!string.Equals(this.DefName, ts.DefName) ||
+                        this.Value != ts.Value)
+                    {
+                        return false;
+                    }
+
+                    if (this.DegreeData == null && ts.DegreeData == null)
+                    {
+                        return true;
+                    }
+
+                    if (this.DegreeData == null && ts.DegreeData != null ||
+                        this.DegreeData != null && ts.DegreeData == null ||
+                        this.DegreeData.Count != ts.DegreeData.Count)
+                    {
+                        return false;
+                    }
+
+                    int found = 0;
+                    foreach (TraitStat s in this.DegreeData)
+                    {
+                        foreach (TraitStat dd in ts.DegreeData)
+                        {
+                            if (s.DefName.Equals(dd.DefName))
+                            {
+                                if (!s.Equals(dd))
+                                {
+                                    return false;
+                                }
+                                ++found;
+                                break;
+                            }
+                        }
+                    }
+
+                    if (found != this.DegreeData.Count)
+                    {
+                        return false;
+                    }
+                    return true;
+                }
+                return false;
             }
         }
     }
