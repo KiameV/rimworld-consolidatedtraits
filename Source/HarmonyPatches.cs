@@ -1,11 +1,6 @@
 ﻿using ConfigurableMaps.Settings;
 using Harmony;
-using RimWorld;
-using RimWorld.BaseGen;
-using RimWorld.Planet;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
 using Verse;
 
@@ -14,16 +9,30 @@ namespace ConsolidatedTraits
     [StaticConstructorOnStartup]
     class HarmonyPatches
     {
-        static HarmonyPatches()
-        {
-            var harmony = HarmonyInstance.Create("com.consolidatedtraits.rimworld.mod");
-            harmony.PatchAll(Assembly.GetExecutingAssembly());
-            Log.Message(
-                "ConsolidatedTraits Harmony Patches:" + Environment.NewLine +
-                "  Prefix:" + Environment.NewLine +
-                "    GameComponentUtility.StartedNewGame" + Environment.NewLine +
-                "    GameComponentUtility.LoadedGame");
-        }
+		public static bool UsingInGameDefEditor { get; private set; }
+		static HarmonyPatches()
+		{
+			foreach (var m in ModsConfig.ActiveModsInLoadOrder)
+			{
+				if ("[KV] In-Game Definition Editor - 1.0".Equals(m.Name))
+				{
+					Log.Message("ConsolidatedTraits will not load settings. In-Game Definition Editor should be used instead.");
+					UsingInGameDefEditor = true;
+					break;
+				}
+			}
+
+			if (!UsingInGameDefEditor)
+			{
+				var harmony = HarmonyInstance.Create("com.consolidatedtraits.rimworld.mod");
+				harmony.PatchAll(Assembly.GetExecutingAssembly());
+				Log.Message(
+					"ConsolidatedTraits Harmony Patches:" + Environment.NewLine +
+					"  Prefix:" + Environment.NewLine +
+					"    GameComponentUtility.StartedNewGame" + Environment.NewLine +
+					"    GameComponentUtility.LoadedGame");
+			}
+		}
     }
 
     [HarmonyPatch(typeof(GameComponentUtility), "StartedNewGame")]

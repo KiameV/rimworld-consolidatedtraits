@@ -4,6 +4,7 @@ using UnityEngine;
 using Verse;
 using System;
 using System.Reflection;
+using ConsolidatedTraits;
 
 namespace ConfigurableMaps.Settings
 {
@@ -12,19 +13,23 @@ namespace ConfigurableMaps.Settings
         public static Settings Settings;
 
         public Controller(ModContentPack content) : base(content)
-        {
-            Settings = base.GetSettings<Settings>();
+        { 
+			if (!HarmonyPatches.UsingInGameDefEditor)
+				Settings = base.GetSettings<Settings>();
         }
 
         public override string SettingsCategory()
-        {
-            return "ConsolidatedTraits".Translate();
+		{
+			return "ConsolidatedTraits".Translate();
         }
 
-        public override void DoSettingsWindowContents(Rect inRect)
-        {
-            Settings.DoWindowContents(inRect);
-        }
+		public override void DoSettingsWindowContents(Rect inRect)
+		{
+			if (!HarmonyPatches.UsingInGameDefEditor)
+				Settings.DoWindowContents(inRect);
+			else
+				Widgets.Label(new Rect(inRect.xMin, inRect.yMin, inRect.width, 200), "Please use \"In-Game Def Editor\" to modify traits.");
+		}
     }
 
     public class Settings : ModSettings
@@ -38,10 +43,10 @@ namespace ConfigurableMaps.Settings
         private List<TraitStat> expose = null;
 
         public void DoWindowContents(Rect rect)
-        {
-            this.Init();
+		{
+			this.Init();
 
-            float x = rect.xMin, y = rect.yMin;
+			float x = rect.xMin, y = rect.yMin;
             Widgets.Label(new Rect(x, y, 200, 32), "ConsolidatedTraits.EditTraits".Translate());
             y += 40;
 
@@ -121,7 +126,7 @@ namespace ConfigurableMaps.Settings
 
         public override void ExposeData()
         {
-            this.Init();
+			this.Init();
 
             base.ExposeData();
 
@@ -163,8 +168,11 @@ namespace ConfigurableMaps.Settings
         }
 
         public void Init()
-        {
-            if (this.TraitDefs.Count == 0)
+		{
+			if (HarmonyPatches.UsingInGameDefEditor)
+				return;
+
+			if (this.TraitDefs.Count == 0)
             {
                 foreach(TraitDef d in DefDatabase<TraitDef>.AllDefs)
                     this.TraitDefs.Add(d.defName, d);
