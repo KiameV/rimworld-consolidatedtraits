@@ -12,9 +12,10 @@ namespace ConsolidatedTraits
 		public static bool UsingInGameDefEditor { get; private set; }
 		static HarmonyPatches()
 		{
+			UsingInGameDefEditor = false;
 			foreach (var m in ModsConfig.ActiveModsInLoadOrder)
 			{
-				if ("[KV] In-Game Definition Editor - 1.0".Equals(m.Name))
+				if (m.Name.IndexOf("In-Game Definition Editor") != -1)
 				{
 					Log.Message("ConsolidatedTraits will not load settings. In-Game Definition Editor should be used instead.");
 					UsingInGameDefEditor = true;
