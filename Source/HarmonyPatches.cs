@@ -1,5 +1,5 @@
 ﻿using ConfigurableMaps.Settings;
-using Harmony;
+using HarmonyLib;
 using System;
 using System.Reflection;
 using Verse;
@@ -25,7 +25,7 @@ namespace ConsolidatedTraits
 
 			if (!UsingInGameDefEditor)
 			{
-				var harmony = HarmonyInstance.Create("com.consolidatedtraits.rimworld.mod");
+				var harmony = new Harmony("com.consolidatedtraits.rimworld.mod");
 				harmony.PatchAll(Assembly.GetExecutingAssembly());
 				Log.Message(
 					"ConsolidatedTraits Harmony Patches:" + Environment.NewLine +

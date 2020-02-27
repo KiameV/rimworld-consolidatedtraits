@@ -51,7 +51,7 @@ namespace ConfigurableMaps.Settings
             y += 40;
 
             x += 20;
-            string label = (this.selected == null) ? "ConsolidatedTraits.SelectTrait".Translate() : this.selected.defName;
+            string label = (this.selected == null) ? "ConsolidatedTraits.SelectTrait".Translate().ToString() : this.selected.defName;
             if (Widgets.ButtonText(new Rect(x, y, 200, 32), label))
             {
                 this.DrawFloatingOptions();
