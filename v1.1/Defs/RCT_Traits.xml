@@ -743,6 +743,31 @@ MedicalSurgerySuccessChance
 			<li>RCT_Dunce</li>
 		</conflictingTraits>
 	</TraitDef>
+	
+	<TraitDef>
+		<defName>RCT_decentlearner</defName>
+		<commonality>0.50</commonality>
+		<exclusionTags>
+		  <li>SlowFastLearner</li>
+		</exclusionTags>
+		<degreeDatas>
+		  <li>
+			<label>decent learner</label>
+			<description>[PAWN_nameDef] has always picked up skills pretty quickly.</description>
+			<statOffsets>
+			  <GlobalLearningFactor>0.25</GlobalLearningFactor>
+			</statOffsets>
+		  </li>
+		</degreeDatas>
+		<requiredWorkTypes>
+			<li>Art</li>
+			<li>Crafting</li>
+			<li>Research</li>
+		</requiredWorkTypes>
+		<conflictingTraits>
+			<li>TooSmart</li>
+		</conflictingTraits>
+	</TraitDef>
 
 	<TraitDef>
 		<defName>RCT_Trader</defName>
