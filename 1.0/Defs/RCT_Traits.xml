@@ -1,97 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-<!--
-FixBrokenDownBuildingSuccessChance
-ConstructSuccessChance
-ConstructionSpeed
-HuntingStealth
-PlantHarvestYield
-PlantWorkSpeed
-AnimalGatherYield
-AnimalGatherSpeed
-ResearchSpeed
-SmoothingSpeed
-MiningYield
-MiningSpeed
-WorkSpeedGlobal
 
-NegotiationAbility
-PawnBeauty
-ArrestSuccessChance
-TradePriceImprovement
-SocialImpact
-TameAnimalChance
-TrainAnimalChance
-
-FixBrokenDownBuildingSuccessChance
-ConstructSuccessChance
-ConstructionSpeed
-HuntingStealth
-PlantHarvestYield
-PlantWorkSpeed
-AnimalGatherYield
-AnimalGatherSpeed
-ResearchSpeed
-SmoothingSpeed
-MiningYield
-MiningSpeed
-WorkSpeedGlobal
-
-
-NegotiationAbility
-PawnBeauty
-ArrestSuccessChance
-TradePriceImprovement
-SocialImpact
-TameAnimalChance
-TrainAnimalChance
-
-SmeltingSpeed
-GeneralLaborSpeed
-DrugSynthesisSpeed
-CookSpeed
-FoodPoisonChance
-DrugCookingSpeed
-ButcheryFleshSpeed
-ButcheryMechanoidSpeed
-ButcheryFleshEfficiency
-ButcheryMechanoidEfficiency
-
-MoveSpeed
-MentalBreakThreshold
-PsychicSensitivity
-PsychicEntropyMax
-PsychicEntropyRecoveryRate
-PsychicEntropyGain
-ToxicSensitivity
-GlobalLearningFactor
-HungerRateMultiplier
-RestRateMultiplier
-EatingSpeed
-ComfyTemperatureMin
-ComfyTemperatureMax
-ImmunityGainSpeed
-CarryingCapacity
-MeatAmount
-LeatherAmount
-MinimumHandlingSkill
-PainShockThreshold
-ForagedNutritionPerDay
-
-MeleeDPS
-MeleeArmorPenetration
-MeleeHitChance
-MeleeDodgeChance
-ShootingAccuracyPawn
-AimingDelayFactor
-PawnTrapSpringChance
-IncomingDamageFactor
-
-MedicalTendSpeed
-MedicalTendQuality
-MedicalOperationSpeed
-MedicalSurgerySuccessChance
--->
 	<TraitDef>
 		<defName>RCT_Aesthete</defName>
 		<commonality>0.2</commonality>
@@ -182,7 +91,7 @@ MedicalSurgerySuccessChance
 				<statOffsets>
 					<ConstructionSpeed>0.2</ConstructionSpeed>
 					<ConstructSuccessChance>0.2</ConstructSuccessChance>
-					<TameAnimalChance>-0.4</TameAnimalChance>
+					<SculptingSpeed>-0.4</SculptingSpeed>
 				</statOffsets>
 				<skillGains>
 					<li><key>Artistic</key><value>-2</value></li>
@@ -368,7 +277,9 @@ MedicalSurgerySuccessChance
 					<MiningYield>-0.2</MiningYield>
 					<PlantHarvestYield>-0.2</PlantHarvestYield>
 					<PlantWorkSpeed>-0.2</PlantWorkSpeed>
-					<GeneralLaborSpeed>-0.2</GeneralLaborSpeed>
+					<SculptingSpeed>-0.2</SculptingSpeed>
+					<SmithingSpeed>-0.2</SmithingSpeed>
+					<TailoringSpeed>-0.2</TailoringSpeed>
 				</statOffsets>
 				<skillGains>
 					<li><key>Artistic</key><value>-2</value></li>
@@ -400,7 +311,9 @@ MedicalSurgerySuccessChance
 					<MiningYield>0.1</MiningYield>
 					<PlantHarvestYield>0.1</PlantHarvestYield>
 					<PlantWorkSpeed>0.1</PlantWorkSpeed>
-					<GeneralLaborSpeed>0.1</GeneralLaborSpeed>
+					<SculptingSpeed>0.1</SculptingSpeed>
+					<SmithingSpeed>0.1</SmithingSpeed>
+					<TailoringSpeed>0.1</TailoringSpeed>
 				</statOffsets>
 				<skillGains>
 					<li><key>Artistic</key><value>2</value></li>

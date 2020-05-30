@@ -23,29 +23,6 @@ SocialImpact
 TameAnimalChance
 TrainAnimalChance
 
-FixBrokenDownBuildingSuccessChance
-ConstructSuccessChance
-ConstructionSpeed
-HuntingStealth
-PlantHarvestYield
-PlantWorkSpeed
-AnimalGatherYield
-AnimalGatherSpeed
-ResearchSpeed
-SmoothingSpeed
-MiningYield
-MiningSpeed
-WorkSpeedGlobal
-
-
-NegotiationAbility
-PawnBeauty
-ArrestSuccessChance
-TradePriceImprovement
-SocialImpact
-TameAnimalChance
-TrainAnimalChance
-
 SmeltingSpeed
 GeneralLaborSpeed
 DrugSynthesisSpeed
@@ -434,16 +411,18 @@ MedicalSurgerySuccessChance
 				<commonality>0.25</commonality>
 				<degree>2</degree>
 				<statOffsets>
-					<PainShockThreshold>0.65</PainShockThreshold>
+					<PainShockThreshold>0.25</PainShockThreshold>
+					<IncomingDamageFactor>-0.25</IncomingDamageFactor>
 				</statOffsets>
 			</li>
 			<li>
 				<label>ironman</label>
 				<description>[PAWN_nameDef] has a high tolerance for pain.</description>
-				<commonality>0.4</commonality>
+				<commonality>0.9</commonality>
 				<degree>1</degree>
 				<statOffsets>
-					<PainShockThreshold>0.33</PainShockThreshold>
+					<PainShockThreshold>0.15</PainShockThreshold>
+					<IncomingDamageFactor>-0.15</IncomingDamageFactor>
 				</statOffsets>
 			</li>
 			<li>
@@ -452,7 +431,8 @@ MedicalSurgerySuccessChance
 				<commonality>0.35</commonality>
 				<degree>-1</degree>
 				<statOffsets>
-					<PainShockThreshold>-0.33</PainShockThreshold>
+					<PainShockThreshold>-0.15</PainShockThreshold>
+					<IncomingDamageFactor>0.15</IncomingDamageFactor>
 				</statOffsets>
 			</li>
 		</degreeDatas>
