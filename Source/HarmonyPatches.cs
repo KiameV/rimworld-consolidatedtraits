@@ -27,11 +27,11 @@ namespace ConsolidatedTraits
 			{
 				var harmony = new Harmony("com.consolidatedtraits.rimworld.mod");
 				harmony.PatchAll(Assembly.GetExecutingAssembly());
-				Log.Message(
-					"ConsolidatedTraits Harmony Patches:" + Environment.NewLine +
-					"  Prefix:" + Environment.NewLine +
-					"    GameComponentUtility.StartedNewGame" + Environment.NewLine +
-					"    GameComponentUtility.LoadedGame");
+				//Log.Message(
+				//	"ConsolidatedTraits Harmony Patches:" + Environment.NewLine +
+				//	"  Prefix:" + Environment.NewLine +
+				//	"    GameComponentUtility.StartedNewGame" + Environment.NewLine +
+				//	"    GameComponentUtility.LoadedGame");
 			}
 		}
     }

@@ -476,7 +476,7 @@ MedicalSurgerySuccessChance
 		<degreeDatas>
 			<li>
 				<label>cranial nerve palsy</label>
-				<description>[PAWN_nameDef] has a hard time seeing things clearly unless [PAWN_pronoun].</description>
+				<description>[PAWN_nameDef] has a hard time seeing things clearly unless they are right in front of them.</description>
 				<commonality>0.35</commonality>
 				<degree>-1</degree>
 				<statOffsets>
@@ -958,7 +958,7 @@ MedicalSurgerySuccessChance
 		<degreeDatas>
 			<li>
 				<label>Green thumb</label>
-				<description>[PAWN_nameDef] is a great gardener. The only thing [PAWN_pronoun] is a greener world.</description>
+				<description>[PAWN_nameDef] is a great gardener. The only thing [PAWN_pronoun] wants is a greener world.</description>
 				<statOffsets>
 					<PlantHarvestYield>0.15</PlantHarvestYield>
 					<PlantWorkSpeed>0.15</PlantWorkSpeed>
