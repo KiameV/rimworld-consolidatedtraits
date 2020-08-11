@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 
-	<name>[KV] Consolidated Traits - 1.1</name>
+	<name>[KV] Consolidated Traits - 1.2</name>
 	<author>Rainbeau Flambe (original) &amp; Kiame Vivacity</author>
 	<url>https://ludeon.com/forums/index.php?topic=44577.0</url>
     <supportedVersions>
         <li>1.0</li>
         <li>1.1</li>
+        <li>1.2</li>
     </supportedVersions>
 	<packageId>consolidatedtraits.kv.rw</packageId>
 	<description>
