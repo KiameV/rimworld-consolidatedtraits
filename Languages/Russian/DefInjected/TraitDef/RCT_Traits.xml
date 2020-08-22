@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- FixBrokenDownBuildingSuccessChance
+ConstructSuccessChance
+ConstructionSpeed
+HuntingStealth
+PlantHarvestYield
+PlantWorkSpeed
+AnimalGatherYield
+AnimalGatherSpeed
+ResearchSpeed
+SmoothingSpeed
+MiningYield
+MiningSpeed
+WorkSpeedGlobal
+
+NegotiationAbility
+PawnBeauty
+ArrestSuccessChance
+TradePriceImprovement
+SocialImpact
+TameAnimalChance
+TrainAnimalChance
+
+SmeltingSpeed
+GeneralLaborSpeed
+DrugSynthesisSpeed
+CookSpeed
+FoodPoisonChance
+DrugCookingSpeed
+ButcheryFleshSpeed
+ButcheryMechanoidSpeed
+ButcheryFleshEfficiency
+ButcheryMechanoidEfficiency
+
+MoveSpeed
+MentalBreakThreshold
+PsychicSensitivity
+PsychicEntropyMax
+PsychicEntropyRecoveryRate
+PsychicEntropyGain
+ToxicSensitivity
+GlobalLearningFactor
+HungerRateMultiplier
+RestRateMultiplier
+EatingSpeed
+ComfyTemperatureMin
+ComfyTemperatureMax
+ImmunityGainSpeed
+CarryingCapacity
+MeatAmount
+LeatherAmount
+MinimumHandlingSkill
+PainShockThreshold
+ForagedNutritionPerDay
+
+MeleeDPS
+MeleeArmorPenetration
+MeleeHitChance
+MeleeDodgeChance
+ShootingAccuracyPawn
+AimingDelayFactor
+PawnTrapSpringChance
+IncomingDamageFactor
+
+MedicalTendSpeed
+MedicalTendQuality
+MedicalOperationSpeed
+MedicalSurgerySuccessChance -->
+
+  <RCT_Aesthete.degreeDatas.0.label>эстет</RCT_Aesthete.degreeDatas.0.label>
+  <RCT_Aesthete.degreeDatas.0.description>[PAWN_nameDef] любит красивые вещи и хочет, чтобы [PAWN_possessive] окружение выклядело соответствующеe.</RCT_Aesthete.degreeDatas.0.description>
+
+  <RCT_AnimalLover.degreeDatas.0.label>любитель животных</RCT_AnimalLover.degreeDatas.0.label>
+  <RCT_AnimalLover.degreeDatas.0.description>[PAWN_nameDef] любит животных. К людям однако [PAWN_pronoun] такого не чувствует.</RCT_AnimalLover.degreeDatas.0.description>
+
+  <RCT_AnimalHater.degreeDatas.0.label>ненавистник животных</RCT_AnimalHater.degreeDatas.0.label>
+  <RCT_AnimalHater.degreeDatas.0.description>[PAWN_nameDef] ненавидит животных. Животным похоже тоже не нравится [PAWN_objective] присутствие.</RCT_AnimalHater.degreeDatas.0.description>
+
+
+  <!-- <TraitDef>
+		<defName>RCT_Bipolar</defName>
+		<commonality>0.2</commonality>
+		<degreeDatas>
+			<li>
+				<label>bipolar</label>
+				<description>[PAWN_nameDef] is prone to extreme mood swings. When [PAWN_pronoun]'s happy, [PAWN_pronoun] can be very happy, but when [PAWN_pronoun]'s sad, [PAWN_pronoun] can become dangerously depressed.</description>
+			</li>
+		</degreeDatas>
+		<conflictingTraits>
+			<li>NaturalMood</li>
+		</conflictingTraits>
+	</TraitDef> -->
+
+  <RCT_Builder.degreeDatas.0.label>конструктор</RCT_Builder.degreeDatas.0.label>
+  <RCT_Builder.degreeDatas.0.description>В детстве [PAWN_nameDef] обожает играть в стройку, и даже повзрослев, любит собирать вещи воедино. Но [PAWN_pronoun] сбивается с работы, если не имеет точных инструкций.</RCT_Builder.degreeDatas.0.description>
+
+  <RCT_Butcher.degreeDatas.0.label>мясник</RCT_Butcher.degreeDatas.0.label>
+  <RCT_Butcher.degreeDatas.0.description>[PAWN_nameDef] нравится работать с мясом. [PAWN_possessive] скорость разделки увеличена, но только если [PAWN_pronoun] разделывает трупы животных. [PAWN_pronoun] плохо справляется с механоидами.</RCT_Butcher.degreeDatas.0.description>
+
+  <RCT_Claustrophobic.degreeDatas.0.label>клаустрофоб</RCT_Claustrophobic.degreeDatas.0.label>
+  <RCT_Claustrophobic.degreeDatas.0.description>[PAWN_nameDef] клаустрофоб. [PAWN_pronoun] боится замкнутых пространстов, и поэтому является плохим шахтером.</RCT_Claustrophobic.degreeDatas.0.description>
+
+  <RCT_ColdLover.degreeDatas.0.label>любитель холода</RCT_ColdLover.degreeDatas.0.label>
+  <RCT_ColdLover.degreeDatas.0.description>[PAWN_nameDef] любит холодные температуры. [PAWN_pronoun] будет обращать меньше внимания на холод, но больше ныть при жаре.</RCT_ColdLover.degreeDatas.0.description>
+
+  <RCT_DeepSleeper.degreeDatas.0.label>крепкий сон</RCT_DeepSleeper.degreeDatas.0.label>
+  <RCT_DeepSleeper.degreeDatas.0.description>[PAWN_nameDef] проспит что-угодно.</RCT_DeepSleeper.degreeDatas.0.description>
+
+  <RCT_Dunce.degreeDatas.0.label>болван</RCT_Dunce.degreeDatas.0.label>
+  <RCT_Dunce.degreeDatas.0.description>[PAWN_nameDef] немного туповат(-а) и поэтому скорость обучения меньше, чем у других.</RCT_Dunce.degreeDatas.0.description>
+
+  <RCT_Gourmet.degreeDatas.0.label>гастроном</RCT_Gourmet.degreeDatas.0.label>
+  <RCT_Gourmet.degreeDatas.0.description>[PAWN_nameDef] любит готовить еду. [PAWN_possessive] еда хорошая на вкус, но [PAWN_pronoun] тратит много времени на готовку, чтобы все было "как надо".</RCT_Gourmet.degreeDatas.0.description>
+
+  <RCT_HeatLover.degreeDatas.0.label>любитель тепла</RCT_HeatLover.degreeDatas.0.label>
+  <RCT_HeatLover.degreeDatas.0.description>[PAWN_nameDef] любит теплую погоду. [PAWN_pronoun] будет обращать меньше внимания на тепло, но больше ныть при холоде.</RCT_HeatLover.degreeDatas.0.description>
+
+  <RCT_Aptitude.degreeDatas.0.label>плохая координация</RCT_Aptitude.degreeDatas.0.label>
+  <RCT_Aptitude.degreeDatas.0.description>[PAWN_pronoun] намерения чисты, но у [PAWN_nameDef] плохая координация, в любом виде квалифицированного труда [PAWN_nameDef] ожидает неудача.</RCT_Aptitude.degreeDatas.0.description>
+  <RCT_Aptitude.degreeDatas.1.label>хорошая координация</RCT_Aptitude.degreeDatas.1.label>
+  <RCT_Aptitude.degreeDatas.1.description>Все движения [PAWN_nameDef] необычайно скоординированны, и в любом виде квалифицированного труда все отлично получается.</RCT_Aptitude.degreeDatas.1.description>
+
+  <RCT_PainThreshold.degreeDatas.0.label>нерушимый</RCT_PainThreshold.degreeDatas.0.label>
+  <RCT_PainThreshold.degreeDatas.0.description>У [PAWN_nameDef] обладает исключительно высокой толерантностью к боли. [PAWN_pronoun] вряд ли он упадет от боли.</RCT_PainThreshold.degreeDatas.0.description>
+  <RCT_PainThreshold.degreeDatas.1.label>железный человек</RCT_PainThreshold.degreeDatas.1.label>
+  <RCT_PainThreshold.degreeDatas.1.description>[PAWN_nameDef] обладает высокой толерантностью к боли.</RCT_PainThreshold.degreeDatas.1.description>
+  <RCT_PainThreshold.degreeDatas.2.label>низкая терпимость боли</RCT_PainThreshold.degreeDatas.2.label>
+  <RCT_PainThreshold.degreeDatas.2.description>[PAWN_nameDef] будет обездвижен болью быстрее, чем большинство.</RCT_PainThreshold.degreeDatas.2.description>
+
+  <RCT_Inventor.degreeDatas.0.label>изобретатель</RCT_Inventor.degreeDatas.0.label>
+  <RCT_Inventor.degreeDatas.0.description>В голове [PAWN_nameDef] появляются очень странные идеи. [PAWN_objective] легко даетсся изучение новых технологий, но [PAWN_pronoun] вечно витает в облаках.</RCT_Inventor.degreeDatas.0.description>
+
+  <RCT_Eyesight.degreeDatas.0.label>близорукость</RCT_Eyesight.degreeDatas.0.label>
+  <RCT_Eyesight.degreeDatas.0.description>У [PAWN_nameDef] проблемы со зрением, [PAWN_objective] сложно увидеть то, что находится вдалеке</RCT_Eyesight.degreeDatas.0.description>
+  <RCT_Eyesight.degreeDatas.1.label>соколиный глаз</RCT_Eyesight.degreeDatas.1.label>
+  <RCT_Eyesight.degreeDatas.1.description>У [PAWN_nameDef] соколиный глаз,[PAWN_pronoun] может заметить любую цель издалека.</RCT_Eyesight.degreeDatas.1.description>
+
+  <RCT_NeatFreak.degreeDatas.0.label>гермофоб</RCT_NeatFreak.degreeDatas.0.label>
+  <RCT_NeatFreak.degreeDatas.0.description>[PAWN_nameDef] не любит грязь.</RCT_NeatFreak.degreeDatas.0.description>
+
+  <RCT_EatingSpeed.degreeDatas.0.label>неторопливый едок</RCT_EatingSpeed.degreeDatas.0.label>
+  <RCT_EatingSpeed.degreeDatas.0.description>[PAWN_nameDef] не торопится при употреблении пищи, [PAWN_pronoun] тратит больше времени на употребление пищи.</RCT_EatingSpeed.degreeDatas.0.description>
+  <RCT_EatingSpeed.degreeDatas.1.label>поглотитель</RCT_EatingSpeed.degreeDatas.1.label>
+  <RCT_EatingSpeed.degreeDatas.1.description>[PAWN_nameDef] поглощает намного быстрее других.</RCT_EatingSpeed.degreeDatas.1.description>
+
+  <RCT_Nyctophobe.degreeDatas.0.label>никтофоб</RCT_Nyctophobe.degreeDatas.0.label>
+  <RCT_Nyctophobe.degreeDatas.0.description>[PAWN_nameDef] боится темноты.</RCT_Nyctophobe.degreeDatas.0.description>
+  <RCT_Nyctophobe.degreeDatas.1.label>nниктофил</RCT_Nyctophobe.degreeDatas.1.label>
+  <RCT_Nyctophobe.degreeDatas.1.description>[PAWN_nameDef] совсем не боится темноты.</RCT_Nyctophobe.degreeDatas.1.description>
+
+  <RCT_Perfectionist.degreeDatas.0.label>перфекционист</RCT_Perfectionist.degreeDatas.0.label>
+  <RCT_Perfectionist.degreeDatas.0.description>[PAWN_nameDef] хочет, чтобы все, что [PAWN_pronoun] делает было идеальным, и не важно, сколько времени это займет. [PAWN_nameDef] имеет низкие шансы на провал, когда он что-либо делает, но [PAWN_pronoun] работает медленно.</RCT_Perfectionist.degreeDatas.0.description>
+
+  <RCT_Medic.degreeDatas.0.label>плохой доктор</RCT_Medic.degreeDatas.0.label>
+  <RCT_Medic.degreeDatas.0.description>Даже если у человека намерения чисты, это не значит, что из него выйдет хороший доктор. [PAWN_nameDef] как раз из таких людей.</RCT_Medic.degreeDatas.0.description>
+  <RCT_Medic.degreeDatas.1.label>квалифицированный доктор</RCT_Medic.degreeDatas.1.label>
+  <RCT_Medic.degreeDatas.1.description>У [PAWN_nameDef] хорошие навыки в медицине. Пациентам под [PAWN_possessive] крылом ничего не угрожает.</RCT_Medic.degreeDatas.1.description>
+  <RCT_Medic.degreeDatas.2.label>прекрасный доктор</RCT_Medic.degreeDatas.2.label>
+  <RCT_Medic.degreeDatas.2.description>У [PAWN_nameDef] талант к медицине. Пациентам под [PAWN_possessive] крылом абсолютон нечего боятся.</RCT_Medic.degreeDatas.2.description>
+
+  <RCT_Rockhound.degreeDatas.0.label>геолог</RCT_Rockhound.degreeDatas.0.label>
+  <RCT_Rockhound.degreeDatas.0.description>[PAWN_nameDef] нравится работать с камнями. [PAWN_possessive] скорость горных работ повышена, но [PAWN_possessive] отсутвие интереса в других сферах деятельности замедляет [PAWN_objective] скорость выполнения других работ. А также [PAWN_pronoun] ненавидит работу с цветами.</RCT_Rockhound.degreeDatas.0.description>
+
+  <RCT_Savant.degreeDatas.0.label>савант</RCT_Savant.degreeDatas.0.label>
+  <RCT_Savant.degreeDatas.0.description>[PAWN_nameDef] можно назвать современным Да Винчи, с творческим умом, который может схватывать новые идеи почти без усилий. Но [PAWN_possessive] скорость выполнения физического труда ужасно низка .</RCT_Savant.degreeDatas.0.description>
+
+  <RCT_decentlearner.degreeDatas.0.label>схватывает на лету</RCT_decentlearner.degreeDatas.0.label>
+  <RCT_decentlearner.degreeDatas.0.description>[PAWN_nameDef] всегда быстро обучался(-лась) новым навыкам.</RCT_decentlearner.degreeDatas.0.description>
+
+  <RCT_Trader.degreeDatas.0.label>простофиля</RCT_Trader.degreeDatas.0.label>
+  <RCT_Trader.degreeDatas.0.description>[PAWN_nameDef] не умеет торговаться, и поэтому [PAWN_possessive] всегда обманывают во время торговли. [PAWN_pronoun] всегда платит больше, чем нужно, при этом думая, что [PAWN_pronoun] совершает хорошую сделку. </RCT_Trader.degreeDatas.0.description>
+  <RCT_Trader.degreeDatas.1.label>торгаш</RCT_Trader.degreeDatas.1.label>
+  <RCT_Trader.degreeDatas.1.description>[PAWN_nameDef] любит торговаться, и у н[PAWN_possessive] это неплохо получается. [PAWN_pronoun] получает лучшие цены у торговцев.</RCT_Trader.degreeDatas.1.description>
+  <RCT_Trader.degreeDatas.2.label>хороший торговец</RCT_Trader.degreeDatas.2.label>
+  <RCT_Trader.degreeDatas.2.description>[PAWN_nameDef] всегда получает лучшие сделки.</RCT_Trader.degreeDatas.2.description>
+
+  <ShootingAccuracy.degreeDatas.0.label>аккуратный стрелок</ShootingAccuracy.degreeDatas.0.label>
+  <ShootingAccuracy.degreeDatas.0.description>[PAWN_nameDef] тратит больше времени на прицеливание при стрельбе. [PAWN_pronoun] стреляет реже, но точнее.</ShootingAccuracy.degreeDatas.0.description>
+  <ShootingAccuracy.degreeDatas.1.label>беспечный стрелок</ShootingAccuracy.degreeDatas.1.label>
+  <ShootingAccuracy.degreeDatas.1.description>Пиф! Паф! [PAWN_nameDef] любить спускать курок. [PAWN_pronoun] стреляет быстрее, но страдает точность.</ShootingAccuracy.degreeDatas.1.description>
+  <ShootingAccuracy.degreeDatas.2.label>хороший стрелок</ShootingAccuracy.degreeDatas.2.label>
+  <ShootingAccuracy.degreeDatas.2.description>[PAWN_nameDef] умеет обращаться с оружием, стреляет быстрее и точнее.</ShootingAccuracy.degreeDatas.2.description>
+
+  <RCT_Diplomat.degreeDatas.0.label>неотесанность</RCT_Diplomat.degreeDatas.0.label>
+  <RCT_Diplomat.degreeDatas.0.description>Тонкость? Дипломатия? [PAWN_nameDef] не знакомы подобные слова.</RCT_Diplomat.degreeDatas.0.description>
+  <RCT_Diplomat.degreeDatas.1.label>дипломат</RCT_Diplomat.degreeDatas.1.label>
+  <RCT_Diplomat.degreeDatas.1.description>[PAWN_nameDef] умеет смазывать колеса дипломатии.</RCT_Diplomat.degreeDatas.1.description>
+  <RCT_Diplomat.degreeDatas.2.label>хороший дипломат</RCT_Diplomat.degreeDatas.2.label>
+  <RCT_Diplomat.degreeDatas.2.description>[PAWN_nameDef] так жонглирует словами, что у н[PAWN_possessive] всегда получается разрадить напряженную обстановку. [PAWN_pronoun] может говорить часами и людям вокруг не будет надоедать.</RCT_Diplomat.degreeDatas.2.description>
+
+  <RCT_Constitution.degreeDatas.0.label>слабый организм</RCT_Constitution.degreeDatas.0.label>
+  <RCT_Constitution.degreeDatas.0.description>[PAWN_nameDef] особенно уязвим(-а) к болезням, болезнетворным микроорганизмам и токсическим осадкам.</RCT_Constitution.degreeDatas.0.description>
+  <RCT_Constitution.degreeDatas.1.label>сильный организм</RCT_Constitution.degreeDatas.1.label>
+  <RCT_Constitution.degreeDatas.1.description> Тело [PAWN_nameDef] обладает большим сопротивлением к болезням, болезнетворным микроорганизмам и токсическим осадкам.</RCT_Constitution.degreeDatas.1.description>
+
+  <RCT_BrownThumb.degreeDatas.0.label>плохой садовод</RCT_BrownThumb.degreeDatas.0.label>
+  <RCT_BrownThumb.degreeDatas.0.description>[PAWN_nameDef] ужасный садовник. Единственное, что [PAWN_pronoun] может выращивать - наркотики.</RCT_BrownThumb.degreeDatas.0.description>
+
+  <RCT_GreenThumb.degreeDatas.0.label>хороший садовод</RCT_GreenThumb.degreeDatas.0.label>
+  <RCT_GreenThumb.degreeDatas.0.description>[PAWN_nameDef] отличный садовник.[PAWN_pronoun] хочет, чтобы мир был зеленее.</RCT_GreenThumb.degreeDatas.0.description>
+
+
+</LanguageData>
