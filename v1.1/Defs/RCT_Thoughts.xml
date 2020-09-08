@@ -278,7 +278,7 @@
 		</stages>
 	</ThoughtDef>
 	
-	<!-- Aesthete NeedBeauty Thoughts
+	<!-- Aesthete NeedBeauty Thoughts -->
 	<ThoughtDef>
 		<defName>NeedBeautyAesthete</defName>
 		<workerClass>ThoughtWorker_NeedBeauty</workerClass>
@@ -317,5 +317,5 @@
 				<baseMoodEffect>30</baseMoodEffect>
 			</li>
 		</stages>
-	</ThoughtDef>-->
+	</ThoughtDef>
 </Defs>
