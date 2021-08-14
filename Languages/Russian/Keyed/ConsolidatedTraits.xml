@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <ConsolidatedTraits>Коллекция Навыков</ConsolidatedTraits>
+  <ConsolidatedTraits.EditTraits>Редактировать навыки</ConsolidatedTraits.EditTraits>
+  <ConsolidatedTraits.SelectTrait>Выбрать навыки</ConsolidatedTraits.SelectTrait>
+  <ConsolidatedTraits.Commonality>Частота появления</ConsolidatedTraits.Commonality>
+  <ConsolidatedTraits.ResetAll>Сбросить до стандратных</ConsolidatedTraits.ResetAll>
+
+</LanguageData>

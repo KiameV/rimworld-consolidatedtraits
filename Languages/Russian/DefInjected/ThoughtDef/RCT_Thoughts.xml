@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <!-- Cold-Lover Cold Thoughts -->
+
+  <EnvironmentColdCL.stages.0.label>холодно</EnvironmentColdCL.stages.0.label>
+  <EnvironmentColdCL.stages.0.description>Другим может и не нравится, но я не против такой погоды. Холод меня бодрит!</EnvironmentColdCL.stages.0.description>
+  <EnvironmentColdCL.stages.1.label>очень холодно</EnvironmentColdCL.stages.1.label>
+  <EnvironmentColdCL.stages.1.description>Даже мне прохладно.</EnvironmentColdCL.stages.1.description>
+  <EnvironmentColdCL.stages.2.label>мороз</EnvironmentColdCL.stages.2.label>
+  <EnvironmentColdCL.stages.2.description>Ладно, я согласен, что холодно. Но разве стоит ныть по этому поводу?</EnvironmentColdCL.stages.2.description>
+
+
+  <!-- Heat-Lover Cold Thoughts -->
+
+  <EnvironmentColdHL.stages.0.label>холодно</EnvironmentColdHL.stages.0.label>
+  <EnvironmentColdHL.stages.0.description>Хотелось бы в место по теплее.</EnvironmentColdHL.stages.0.description>
+  <EnvironmentColdHL.stages.1.label>очень холодно</EnvironmentColdHL.stages.1.label>
+  <EnvironmentColdHL.stages.1.description>Как же мне холодно. Все тело дрожит. Никак не могу согреться.</EnvironmentColdHL.stages.1.description>
+  <EnvironmentColdHL.stages.2.label>мороз</EnvironmentColdHL.stages.2.label>
+  <EnvironmentColdHL.stages.2.description>Мои зубы стучат так сильно, что я едва могу говорить. Пальцы на ногах онемели. Мне нужно согреться..</EnvironmentColdHL.stages.2.description>
+
+
+  <!-- Cold-Lover Heat Thoughts -->
+
+  <EnvironmentHotCL.stages.0.label>жарко</EnvironmentHotCL.stages.0.label>
+  <EnvironmentHotCL.stages.0.description>Мне не нравится эта жара. Я потею.</EnvironmentHotCL.stages.0.description>
+  <EnvironmentHotCL.stages.1.label>очень жарко</EnvironmentHotCL.stages.1.label>
+  <EnvironmentHotCL.stages.1.description>Я сильно перегреваюсь.</EnvironmentHotCL.stages.1.description>
+  <EnvironmentHotCL.stages.2.label>ужасно жарко</EnvironmentHotCL.stages.2.label>
+  <EnvironmentHotCL.stages.2.description>Я будто в печке! Не знаю, как долго я смогу это выдержать.</EnvironmentHotCL.stages.2.description>
+  <EnvironmentHotCL.stages.3.label>обжигающе жарко</EnvironmentHotCL.stages.3.label>
+  <EnvironmentHotCL.stages.3.description>Я будто в огне. Мне кажется, я умру в этой жаре!</EnvironmentHotCL.stages.3.description>
+
+
+  <!-- Heat-Lover Heat Thoughts -->
+
+  <EnvironmentHotHL.stages.0.label>жарко</EnvironmentHotHL.stages.0.label>
+  <EnvironmentHotHL.stages.0.description>Другим может и не нравится, но я не против такой погоды.</EnvironmentHotHL.stages.0.description>
+  <EnvironmentHotHL.stages.1.label>очень жарко</EnvironmentHotHL.stages.1.label>
+  <EnvironmentHotHL.stages.1.description>Хм, да, возможно и правда стало немного теплее.</EnvironmentHotHL.stages.1.description>
+  <EnvironmentHotHL.stages.2.label>ужасно жарко</EnvironmentHotHL.stages.2.label>
+  <EnvironmentHotHL.stages.2.description>Даже мне становится жарко.</EnvironmentHotHL.stages.2.description>
+  <EnvironmentHotHL.stages.3.label>обжигающе жарко</EnvironmentHotHL.stages.3.label>
+  <EnvironmentHotHL.stages.3.description>Ладно, я согласен, что жарко. Мне от этого не очень хорошо в таких условиях, но могло быть и хуже.</EnvironmentHotHL.stages.3.description>
+
+
+  <!-- Nyctophobe In Darkness Thoughts -->
+
+  <EnvironmentDarkNyctophobe.stages.0.label>в темноте</EnvironmentDarkNyctophobe.stages.0.label>
+  <EnvironmentDarkNyctophobe.stages.0.description>Я ничего не вижу! Мне это совсем не нравится. Мне... Мне кажется там что-то двигается....</EnvironmentDarkNyctophobe.stages.0.description>
+
+
+  <!-- Nycotophile In Darkness Thoughts -->
+
+  <EnvironmentDarkNyctophile.stages.0.label>в темноте</EnvironmentDarkNyctophile.stages.0.label>
+  <EnvironmentDarkNyctophile.stages.0.description>Конечно, видеть стало сложнее, но почему всем так страшно находиться в темноте? Мне вот нравится.</EnvironmentDarkNyctophile.stages.0.description>
+
+
+</LanguageData>
