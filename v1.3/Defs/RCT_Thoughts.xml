@@ -273,7 +273,7 @@
 			<li>
 				<label>in darkness</label>
 				<description>Sure, it's a bit hard to see, but really, why does everyone else freak out so much in the dark? I think it's cool.</description>
-				<baseMoodEffect>6</baseMoodEffect>
+				<baseMoodEffect>4</baseMoodEffect>
 			</li>
 		</stages>
 	</ThoughtDef>

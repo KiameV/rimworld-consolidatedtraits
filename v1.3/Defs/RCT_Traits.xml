@@ -647,9 +647,9 @@ MedicalSurgerySuccessChance
 				<commonality>0.2</commonality>
 				<degree>2</degree>
 				<statOffsets>
-					<MedicalOperationSpeed>-0.2</MedicalOperationSpeed>
+					<MedicalOperationSpeed>0.2</MedicalOperationSpeed>
 					<MedicalSurgerySuccessChance>0.4</MedicalSurgerySuccessChance>
-					<MedicalTendSpeed>-0.2</MedicalTendSpeed>
+					<MedicalTendSpeed>0.2</MedicalTendSpeed>
 					<MedicalTendQuality>0.4</MedicalTendQuality>
 				</statOffsets>
 				<skillGains>

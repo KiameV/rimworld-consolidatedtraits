@@ -1,124 +1,102 @@
 ﻿<Patch>
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/TraitDef[defName = "Abrasive"]/conflictingTraits</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/TraitDef[defName = "Abrasive"]</xpath>
-				<value>
-					<conflictingTraits/>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/TraitDef[defName="Abrasive"]/conflictingTraits</xpath>
+		<match  Class="PatchOperationAdd">
+		  <xpath>/Defs/TraitDef[defName="Abrasive"]/conflictingTraits</xpath>
+			<value>
+				<li>Kind</li>
+				<li>RCT_Diplomat</li>
+				<li>RCT_Trader</li>
+			</value>
+		</match>
+		<nomatch  Class="PatchOperationAdd">
+			<xpath>/Defs/TraitDef[defName="Abrasive"]</xpath>
+			<value>
+			  <conflictingTraits>
+				<li>Kind</li>
+				<li>RCT_Diplomat</li>
+				<li>RCT_Trader</li>
+			  </conflictingTraits>
+			</value>
+		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/TraitDef[defName = "Abrasive"]/conflictingTraits</xpath>
-		<value>
-			<li>Kind</li>
-			<li>RCT_Diplomat</li>
-			<li>RCT_Trader</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/TraitDef[defName = "Ascetic"]/conflictingTraits</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/TraitDef[defName = "Ascetic"]</xpath>
-				<value>
-					<conflictingTraits/>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/TraitDef[defName = "Ascetic"]/conflictingTraits</xpath>
-		<value>
-			<li>RCT_Aesthete</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/TraitDef[defName = "AnnoyingVoice"]/conflictingTraits</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/TraitDef[defName = "AnnoyingVoice"]</xpath>
-				<value>
-					<conflictingTraits/>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/TraitDef[defName = "AnnoyingVoice"]/conflictingTraits</xpath>
-		<value>
-			<li>RCT_Diplomat</li>
-			<li>RCT_Trader</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/TraitDef[defName = "CreepyBreathing"]/conflictingTraits</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/TraitDef[defName = "CreepyBreathing"]</xpath>
-				<value>
-					<conflictingTraits/>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/TraitDef[defName = "CreepyBreathing"]/conflictingTraits</xpath>
-		<value>
-			<li>RCT_Diplomat</li>
-			<li>RCT_Trader</li>
-		</value>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThoughtDef[defName="Ascetic"]/nullifyingTraits</xpath>
+		<match  Class="PatchOperationAdd">
+		  <xpath>/Defs/ThoughtDef[defName="Ascetic"]/nullifyingTraits</xpath>
+			<value>
+				<li>RCT_Aesthete</li>
+			</value>
+		</match>
+		<nomatch  Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName="Ascetic"]</xpath>
+			<value>
+			  <nullifyingTraits>
+				<li>RCT_Aesthete</li>
+			  </nullifyingTraits>
+			</value>
+		</nomatch>
 	</Operation>
 	
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/TraitDef[defName = "FastLearner"]/conflictingTraits</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/TraitDef[defName = "FastLearner"]</xpath>
-				<value>
-					<conflictingTraits/>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThoughtDef[defName="AnnoyingVoice"]/nullifyingTraits</xpath>
+		<match  Class="PatchOperationAdd">
+		  <xpath>/Defs/ThoughtDef[defName="AnnoyingVoice"]/nullifyingTraits</xpath>
+			<value>
+				<li>RCT_Diplomat</li>
+				<li>RCT_Trader</li>
+			</value>
+		</match>
+		<nomatch  Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName="AnnoyingVoice"]</xpath>
+			<value>
+			  <nullifyingTraits>
+				<li>RCT_Diplomat</li>
+				<li>RCT_Trader</li>
+			  </nullifyingTraits>
+			</value>
+		</nomatch>
 	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/TraitDef[defName = "FastLearner"]/conflictingTraits</xpath>
-		<value>
-			<li>RCT_Dunce</li>
-			<li>RCT_Savant</li>
-			<li>TooSmart</li>
-		</value>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThoughtDef[defName="CreepyBreathing"]/nullifyingTraits</xpath>
+		<match  Class="PatchOperationAdd">
+		  <xpath>/Defs/ThoughtDef[defName="CreepyBreathing"]/nullifyingTraits</xpath>
+			<value>
+				<li>RCT_Diplomat</li>
+				<li>RCT_Trader</li>
+			</value>
+		</match>
+		<nomatch  Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName="CreepyBreathing"]</xpath>
+			<value>
+			  <nullifyingTraits>
+				<li>RCT_Diplomat</li>
+				<li>RCT_Trader</li>
+			  </nullifyingTraits>
+			</value>
+		</nomatch>
+	</Operation>
+	
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/TraitDef[defName="FastLearner"]/conflictingTraits</xpath>
+		<match  Class="PatchOperationAdd">
+		  <xpath>/Defs/TraitDef[defName="FastLearner"]/conflictingTraits</xpath>
+			<value>
+				<li>RCT_Dunce</li>
+				<li>RCT_Savant</li>
+			</value>
+		</match>
+		<nomatch  Class="PatchOperationAdd">
+			<xpath>/Defs/TraitDef[defName="FastLearner"]</xpath>
+			<value>
+			  <conflictingTraits>
+				<li>RCT_Dunce</li>
+				<li>RCT_Savant</li>
+			  </conflictingTraits>
+			</value>
+		</nomatch>
 	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
@@ -152,44 +130,24 @@
 		</value>
 	</Operation>-->
 
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/TraitDef[defName = "Industriousness"]/conflictingTraits</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/TraitDef[defName = "Industriousness"]</xpath>
-				<value>
-					<conflictingTraits/>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/TraitDef[defName = "Industriousness"]/conflictingTraits</xpath>
-		<value>
-			<li>RCT_Aptitude</li>
-			<li>RCT_Perfectionist</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/TraitDef[defName = "NaturalMood"]/conflictingTraits</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/TraitDef[defName = "NaturalMood"]</xpath>
-				<value>
-					<conflictingTraits/>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/TraitDef[defName="Industriousness"]/conflictingTraits</xpath>
+		<match  Class="PatchOperationAdd">
+		  <xpath>/Defs/TraitDef[defName="Industriousness"]/conflictingTraits</xpath>
+			<value>
+				<li>RCT_Aptitude</li>
+				<li>RCT_Perfectionist</li>
+			</value>
+		</match>
+		<nomatch  Class="PatchOperationAdd">
+			<xpath>/Defs/TraitDef[defName="Industriousness"]</xpath>
+			<value>
+			  <conflictingTraits>
+				<li>RCT_Aptitude</li>
+				<li>RCT_Perfectionist</li>
+			  </conflictingTraits>
+			</value>
+		</nomatch>
 	</Operation>
 
 	<!--<Operation Class="PatchOperationAdd">
@@ -198,30 +156,6 @@
 			<li>RCT_Bipolar</li>
 		</value>
 	</Operation>-->
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/TraitDef[defName = "Nerves"]/conflictingTraits</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/TraitDef[defName = "Nerves"]</xpath>
-				<value>
-					<conflictingTraits/>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/TraitDef[defName = "Nerves"]/conflictingTraits</xpath>
-		<value>
-			<li>TooSmart</li>
-		</value>
-	</Operation>
-
 
 	<Operation Class="PatchOperationSequence">
 		<success>Always</success>
@@ -271,76 +205,43 @@
 			</li>
 		</operations>
 	</Operation>
-	
-	<!--<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/TraitDef[defName = "SuperImmune"]/conflictingTraits</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/TraitDef[defName = "SuperImmune"]</xpath>
-				<value>
-					<conflictingTraits/>
-				</value>
-			</li>
-		</operations>
+
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/TraitDef[defName="TooSmart"]/conflictingTraits</xpath>
+		<match  Class="PatchOperationAdd">
+		  <xpath>/Defs/TraitDef[defName="TooSmart"]/conflictingTraits</xpath>
+			<value>
+				<li>RCT_Dunce</li>
+				<li>RCT_Savant</li>
+			</value>
+		</match>
+		<nomatch  Class="PatchOperationAdd">
+			<xpath>/Defs/TraitDef[defName="TooSmart"]</xpath>
+			<value>
+			  <conflictingTraits>
+				<li>RCT_Dunce</li>
+				<li>RCT_Savant</li>
+			  </conflictingTraits>
+			</value>
+		</nomatch>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/TraitDef[defName = "SuperImmune"]/conflictingTraits</xpath>
-		<value>
-			<li>RCT_Constitution</li>
-		</value>
-	</Operation>-->
-	
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/TraitDef[defName = "TooSmart"]/conflictingTraits</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/TraitDef[defName = "TooSmart"]</xpath>
-				<value>
-					<conflictingTraits/>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/TraitDef[defName = "TooSmart"]/conflictingTraits</xpath>
-		<value>
-			<li>RCT_Dunce</li>
-			<li>FastLearner</li>
-			<li>RCT_Savant</li>
-		</value>
-	</Operation>
-
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-				<xpath>/Defs/TraitDef[defName = "Wimp"]/conflictingTraits</xpath>
-				<success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/TraitDef[defName = "Wimp"]</xpath>
-				<value>
-					<conflictingTraits/>
-				</value>
-			</li>
-		</operations>
-	</Operation>
-
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/TraitDef[defName = "Wimp"]/conflictingTraits</xpath>
-		<value>
-			<li>RCT_PainThreshold</li>
-		</value>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/TraitDef[defName="Wimp"]/conflictingTraits</xpath>
+		<match  Class="PatchOperationAdd">
+		  <xpath>/Defs/TraitDef[defName="Wimp"]/conflictingTraits</xpath>
+			<value>
+				<li>RCT_PainThreshold</li>
+			</value>
+		</match>
+		<nomatch  Class="PatchOperationAdd">
+			<xpath>/Defs/TraitDef[defName="Wimp"]</xpath>
+			<value>
+			  <conflictingTraits>
+				<li>RCT_PainThreshold</li>
+			  </conflictingTraits>
+			</value>
+		</nomatch>
 	</Operation>
 	
 	<Operation Class="PatchOperationReplace">
@@ -357,107 +258,118 @@
 		</value>
 	</Operation>
 
-	<Operation Class="PatchOperationAdd">
-		<xpath>/Defs/TraitDef[defName = "Tough"]</xpath>
-		<value>
-			<conflictingTraits>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/TraitDef[defName="Tough"]/conflictingTraits</xpath>
+		<match  Class="PatchOperationAdd">
+		  <xpath>/Defs/TraitDef[defName="Tough"]/conflictingTraits</xpath>
+			<value>
 				<li>Wimp</li>
 				<li>RCT_PainThreshold</li>
-			</conflictingTraits>
-		</value>
+			</value>
+		</match>
+		<nomatch  Class="PatchOperationAdd">
+			<xpath>/Defs/TraitDef[defName="Tough"]</xpath>
+			<value>
+			  <conflictingTraits>
+				<li>Wimp</li>
+				<li>RCT_PainThreshold</li>
+			  </conflictingTraits>
+			</value>
+		</nomatch>
 	</Operation>
 
 	<!-- Thoughts -->
-	
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-			  <xpath>/Defs/ThoughtDef[defName="SleepDisturbed"]/nullifyingTraits</xpath>
-			  <success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThoughtDef[defName="SleepDisturbed"]</xpath>
-				<value>
-					<nullifyingTraits>
-						<li>RCT_DeepSleeper</li>
-					</nullifyingTraits>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThoughtDef[defName="SleepDisturbed"]/nullifyingTraits</xpath>
+		<match  Class="PatchOperationAdd">
+		  <xpath>/Defs/ThoughtDef[defName="SleepDisturbed"]/nullifyingTraits</xpath>
+			<value>
+				<li>RCT_DeepSleeper</li>
+			</value>
+		</match>
+		<nomatch  Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName="SleepDisturbed"]</xpath>
+			<value>
+			  <nullifyingTraits>
+					<li>RCT_DeepSleeper</li>
+			  </nullifyingTraits>
+			</value>
+		</nomatch>
 	</Operation>
 	
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-			  <xpath>/Defs/ThoughtDef[defName="NeedBeauty"]/nullifyingTraits</xpath>
-			  <success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThoughtDef[defName="NeedBeauty"]</xpath>
-				<value>
-					<nullifyingTraits>
-						<li>RCT_Aesthete</li>
-					</nullifyingTraits>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThoughtDef[defName="NeedBeauty"]/nullifyingTraits</xpath>
+		<match  Class="PatchOperationAdd">
+		  <xpath>/Defs/ThoughtDef[defName="NeedBeauty"]/nullifyingTraits</xpath>
+			<value>
+				<li>RCT_Aesthete</li>
+			</value>
+		</match>
+		<nomatch  Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName="NeedBeauty"]</xpath>
+			<value>
+			  <nullifyingTraits>
+					<li>RCT_Aesthete</li>
+			  </nullifyingTraits>
+			</value>
+		</nomatch>
 	</Operation>
 	
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-			  <xpath>/Defs/ThoughtDef[defName="EnvironmentDark"]/nullifyingTraits</xpath>
-			  <success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThoughtDef[defName="EnvironmentDark"]</xpath>
-				<value>
-					<nullifyingTraits>
-						<li>RCT_Nyctophobe</li>
-					</nullifyingTraits>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThoughtDef[defName="EnvironmentDark"]/nullifyingTraits</xpath>
+		<match  Class="PatchOperationAdd">
+		  <xpath>/Defs/ThoughtDef[defName="EnvironmentDark"]/nullifyingTraits</xpath>
+			<value>
+			  <li>RCT_Nyctophobe</li>
+			</value>
+		</match>
+		<nomatch  Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName="EnvironmentDark"]</xpath>
+			<value>
+			  <nullifyingTraits>
+				<li>RCT_Nyctophobe</li>
+			  </nullifyingTraits>
+			</value>
+		</nomatch>
 	</Operation>
 	
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-			  <xpath>/Defs/ThoughtDef[defName="EnvironmentHot"]/nullifyingTraits</xpath>
-			  <success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThoughtDef[defName="EnvironmentHot"]</xpath>
-				<value>
-					<nullifyingTraits>
-						<li>RCT_ColdLover</li>
-						<li>RCT_HeatLover</li>
-					</nullifyingTraits>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThoughtDef[defName="EnvironmentHot"]/nullifyingTraits</xpath>
+		<match  Class="PatchOperationAdd">
+		  <xpath>/Defs/ThoughtDef[defName="EnvironmentHot"]/nullifyingTraits</xpath>
+			<value>
+				<li>RCT_ColdLover</li>
+				<li>RCT_HeatLover</li>
+			</value>
+		</match>
+		<nomatch  Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName="EnvironmentHot"]</xpath>
+			<value>
+			  <nullifyingTraits>
+				<li>RCT_ColdLover</li>
+				<li>RCT_HeatLover</li>
+			  </nullifyingTraits>
+			</value>
+		</nomatch>
 	</Operation>
 	
-	<Operation Class="PatchOperationSequence">
-		<success>Always</success>
-		<operations>
-			<li Class="PatchOperationTest">
-			  <xpath>/Defs/ThoughtDef[defName="EnvironmentCold"]/nullifyingTraits</xpath>
-			  <success>Invert</success>
-			</li>
-			<li Class="PatchOperationAdd">
-				<xpath>/Defs/ThoughtDef[defName="EnvironmentCold"]</xpath>
-				<value>
-					<nullifyingTraits>
-						<li>RCT_ColdLover</li>
-						<li>RCT_HeatLover</li>
-					</nullifyingTraits>
-				</value>
-			</li>
-		</operations>
+	<Operation Class="PatchOperationConditional">
+		<xpath>/Defs/ThoughtDef[defName="EnvironmentCold"]/nullifyingTraits</xpath>
+		<match  Class="PatchOperationAdd">
+		  <xpath>/Defs/ThoughtDef[defName="EnvironmentCold"]/nullifyingTraits</xpath>
+			<value>
+				<li>RCT_ColdLover</li>
+				<li>RCT_HeatLover</li>
+			</value>
+		</match>
+		<nomatch  Class="PatchOperationAdd">
+			<xpath>/Defs/ThoughtDef[defName="EnvironmentCold"]</xpath>
+			<value>
+			  <nullifyingTraits>
+				<li>RCT_ColdLover</li>
+				<li>RCT_HeatLover</li>
+			  </nullifyingTraits>
+			</value>
+		</nomatch>
 	</Operation>
 </Patch>
